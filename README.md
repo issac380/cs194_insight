@@ -22,18 +22,6 @@ A fully interactive dashboard and conversational agent for analyzing simulated r
 - See sales patterns over time or by location.
 - Get actionable AI recommendations to optimize inventory or promotions.
 
----
-
-## 🛠️ Installation
-
-```bash
-# 1. Clone this repo (or download all files)
-git clone <repo-url>
-
-# 2. Install dependencies
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
 
 ---
 ## 🖥️ App Overview
@@ -51,3 +39,16 @@ Ask open-ended or specific questions about sales trends, conversion rates, putba
 Modify the items or stores list in make_rfid_shelf_data() to simulate other products or categories.
 - Agent/LLM Logic:
 Adjust the prompts or output formatting to tune the business advice or AI explanations.
+
+---
+
+## 🛠️ Installation
+
+```bash
+# 1. Clone this repo (or download all files)
+git clone <repo-url>
+
+# 2. Install dependencies
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
