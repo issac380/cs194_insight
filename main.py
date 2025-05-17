@@ -32,15 +32,11 @@ def make_rfid_shelf_data():
             for _ in range(np.random.randint(12, 20)):
                 customer = np.random.choice(customer_ids)
                 session_id += 1
-
-                # 1–2 products per session, higher chance to grab Beats
                 prob = [0.25, 0.35, 0.4]  # Sony, Bose, Beats
                 item_idx = np.random.choice(len(items), p=prob)
                 prod = items[item_idx]
-
                 color = np.random.choice(prod['colors'])
                 spec = np.random.choice(prod['specs'])
-
                 records.append({
                     'session_id': session_id,
                     'date': date,
@@ -51,80 +47,22 @@ def make_rfid_shelf_data():
                     'spec': spec,
                     'event': 'grab'
                 })
-
-                # Purchase likelihood depends on item
                 if prod['item'] == 'Sony WH-1000XM5':
                     if np.random.rand() < 0.85:
-                        records.append({
-                            'session_id': session_id,
-                            'date': date,
-                            'store': store,
-                            'customer_id': customer,
-                            'item': prod['item'],
-                            'color': color,
-                            'spec': spec,
-                            'event': 'purchase'
-                        })
+                        records.append({**records[-1], 'event': 'purchase'})
                     else:
-                        records.append({
-                            'session_id': session_id,
-                            'date': date,
-                            'store': store,
-                            'customer_id': customer,
-                            'item': prod['item'],
-                            'color': color,
-                            'spec': spec,
-                            'event': 'putback'
-                        })
+                        records.append({**records[-1], 'event': 'putback'})
                 elif prod['item'] == 'Beats Solo 4':
-                    # People almost always put back, especially red
                     red_penalty = 0.05 if color == 'Red' else 0.15
                     if np.random.rand() > red_penalty:
-                        records.append({
-                            'session_id': session_id,
-                            'date': date,
-                            'store': store,
-                            'customer_id': customer,
-                            'item': prod['item'],
-                            'color': color,
-                            'spec': spec,
-                            'event': 'putback'
-                        })
+                        records.append({**records[-1], 'event': 'putback'})
                     else:
-                        records.append({
-                            'session_id': session_id,
-                            'date': date,
-                            'store': store,
-                            'customer_id': customer,
-                            'item': prod['item'],
-                            'color': color,
-                            'spec': spec,
-                            'event': 'purchase'
-                        })
-                else:  # Bose QC45
-                    # Balanced behavior
+                        records.append({**records[-1], 'event': 'purchase'})
+                else:
                     if np.random.rand() < 0.5:
-                        records.append({
-                            'session_id': session_id,
-                            'date': date,
-                            'store': store,
-                            'customer_id': customer,
-                            'item': prod['item'],
-                            'color': color,
-                            'spec': spec,
-                            'event': 'purchase'
-                        })
+                        records.append({**records[-1], 'event': 'purchase'})
                     else:
-                        records.append({
-                            'session_id': session_id,
-                            'date': date,
-                            'store': store,
-                            'customer_id': customer,
-                            'item': prod['item'],
-                            'color': color,
-                            'spec': spec,
-                            'event': 'putback'
-                        })
+                        records.append({**records[-1], 'event': 'putback'})
     return pd.DataFrame(records)
 
 # ---------- 2. Load or Generate Data ----------
@@ -147,6 +85,33 @@ def get_product_list():
 
 def get_store_list():
     return sorted(df['store'].unique())
+
+def run_agentic_analysis(user_query):
+    q = user_query.lower()
+    item_match = None
+    store_match = None
+    for prod in get_product_list():
+        if prod.lower() in q:
+            item_match = prod
+            break
+    for st in get_store_list():
+        if st.lower() in q:
+            store_match = st
+            break
+    if ('grab' in q or 'putback' in q or 'purchase' in q or 'conversion' in q or 'frequency' in q or 'rate' in q or 'interact' in q):
+        return analyze_grab_putback(item=item_match, store=store_match)
+    llm_prompt = (
+        "You are an expert retail analytics assistant. "
+        "The user has queried: " + user_query +
+        "\nIf you can answer with the available data, please do, otherwise explain what data would be needed."
+    )
+    llm_response = client.chat.completions.create(
+        model="gpt-4o",
+        messages=[{"role":"system", "content":"You are a retail analytics expert."},
+                  {"role":"user", "content": llm_prompt}],
+        temperature=0.4,
+    ).choices[0].message.content.strip()
+    return llm_response, None
 
 def analyze_grab_putback(item=None, store=None):
     sub = df.copy()
@@ -177,69 +142,61 @@ def analyze_grab_putback(item=None, store=None):
     fig.tight_layout()
     return insight, plot_to_pil(fig)
 
-# --- Chat LLM/Agent ---
-def generate_sales_report_with_recommendations():
-    # Aggregate item-level stats
-    agg = df.groupby(['item', 'color'])['event'].value_counts().unstack(fill_value=0).reset_index()
-    agg['conversion_rate'] = agg['purchase'] / agg['grab'].replace(0, np.nan)
-    agg.fillna(0, inplace=True)
-
-    # Limit to top ~10 items to stay within token limits
-    top_items = agg.sort_values('grab', ascending=False).head(10)
-    summary = top_items.to_csv(index=False)
-
-    prompt = (
-        "You are a retail analyst AI. Based on the following sales data, identify which items have "
-        "high grab and putback rates but low purchase rates. Recommend one or two items to discount "
-        "in order to improve sales. Suggest reasoning based on product behavior.\n\n"
-        f"{summary}"
-    )
-
-    response = client.chat.completions.create(
+# ---------- 4. Chain-of-Verification Full Pipeline ----------
+def generate_cov_chain():
+    # Step 1: Draft
+    draft = client.chat.completions.create(
         model="gpt-4o",
         messages=[
-            {"role": "system", "content": "You are a smart retail strategy assistant."},
-            {"role": "user", "content": prompt}
+            {"role": "system", "content": "You are a retail assistant generating business insights from RFID data."},
+            {"role": "user", "content": "Draft an initial business insight based on headphone grab/putback/purchase data."}
+        ]
+    ).choices[0].message.content.strip()
+
+    # Step 2: Plan Verification Questions
+    questions = client.chat.completions.create(
+        model="gpt-4o",
+        messages=[
+            {"role": "system", "content": "You are an AI analyst that generates verification questions."},
+            {"role": "user", "content": f"Given this draft insight: \"{draft}\"\n\nWrite 2-3 verification questions to fact-check the claim."}
+        ]
+    ).choices[0].message.content.strip()
+
+    # Step 3: Compute answers from the data (hardcoded logic)
+    agg = df.groupby(['item', 'color'])['event'].value_counts().unstack(fill_value=0).reset_index()
+    agg['putback_rate'] = agg['putback'] / agg['grab'].replace(0, np.nan)
+    agg['conversion_rate'] = agg['purchase'] / agg['grab'].replace(0, np.nan)
+    agg = agg.fillna(0).sort_values('putback_rate', ascending=False).head(10)
+    answer_summary = agg.to_csv(index=False)
+
+    # Step 4: Final verified answer
+    final = client.chat.completions.create(
+    model="gpt-4o",
+    messages=[
+            {"role": "system", "content": "You are a strategic retail advisor."},
+            {"role": "user", "content": (
+                f"Here was your draft:\n{draft}\n\n"
+                f"Here are your verification questions:\n{questions}\n\n"
+                f"Here is a verified summary of grab/putback data:\n{answer_summary}\n\n"
+                "Now do the following:\n"
+                "1. List the top 3 items with the highest putback rate.\n"
+                "2. Recommend 1–2 items that should be discounted based on this evidence.\n"
+                "3. Justify the recommendation in plain English for a business operator."
+            )}
         ],
         temperature=0.4,
     ).choices[0].message.content.strip()
 
-    return response
 
-def run_agentic_analysis(user_query):
-    q = user_query.lower()
-    item_match = None
-    store_match = None
-    for prod in get_product_list():
-        if prod.lower() in q:
-            item_match = prod
-            break
-    for st in get_store_list():
-        if st.lower() in q:
-            store_match = st
-            break
-    # Keywords trigger dashboard analysis with plot
-    if ('grab' in q or 'putback' in q or 'purchase' in q or 'conversion' in q or 'frequency' in q or 'rate' in q or 'interact' in q):
-        return analyze_grab_putback(item=item_match, store=store_match)
-    # Fallback: LLM text only
-    llm_prompt = (
-        "You are an expert retail analytics assistant. "
-        "The user has queried: " + user_query +
-        "\nIf you can answer with the available data, please do, otherwise explain what data would be needed."
-    )
-    llm_response = client.chat.completions.create(
-        model="gpt-4o",
-        messages=[{"role":"system", "content":"You are a retail analytics expert."},
-                  {"role":"user", "content": llm_prompt}],
-        temperature=0.4,
-    ).choices[0].message.content.strip()
-    return llm_response, None
+    # Return both outputs
+    full_text = f"### Draft Insight:\n{draft}\n\n### Verification Questions:\n{questions}\n\n### Verified Data Summary:\n```csv\n{answer_summary}\n```\n\n### Final Recommendation:\n{final}"
+    return final, full_text
 
-# ---------- 4. Gradio UI (Chat + Dashboard) ----------
+# ---------- 5. Gradio UI ----------
 with gr.Blocks(title="RFID Shelf Dashboard + Chat") as demo:
-    gr.Markdown("# 🛒 RFID Shelf Dashboard + Agentic Chat")
+    gr.Markdown("# \U0001F6D2 RFID Shelf Dashboard + Agentic Chat")
     gr.Markdown("Interact by **dropdown** or **chat**. See product grabs/putbacks/purchases and conversion rates for any product and store.")
-    
+
     with gr.Tab("Dashboard"):
         with gr.Row():
             store_dd = gr.Dropdown(["All"] + get_store_list(), value="All", label="Store")
@@ -249,19 +206,16 @@ with gr.Blocks(title="RFID Shelf Dashboard + Chat") as demo:
         insight = gr.Markdown(label="Insight")
         plot = gr.Image(type="pil", label="Plot")
         btn.click(analyze_grab_putback, inputs=[item_dd, store_dd], outputs=[insight, plot])
-        # Optional: auto-run on page load (uncomment if desired)
-        # demo.load(analyze_grab_putback, inputs=[item_dd, store_dd], outputs=[insight, plot])
-    
-    with gr.Tab("Sales Report"):
-        gr.Markdown("## 📊 Sales Summary & Business Recommendations")
-        report_btn = gr.Button("Generate Sales Report")
-        report_output = gr.Markdown()
 
-        report_btn.click(
-            fn=lambda: generate_sales_report_with_recommendations(),
-            inputs=[],
-            outputs=[report_output]
-        )
+    with gr.Tab("Chain-of-Verification"):
+        gr.Markdown("## \U0001F9EA Chain-of-Verification Report")
+        cov_btn = gr.Button("Generate Full CoVe Report")
+        short_output = gr.Markdown()
+        full_output = gr.Markdown(visible=False)
+        toggle = gr.Checkbox(label="See full Chain of Verification output")
+
+        cov_btn.click(generate_cov_chain, outputs=[short_output, full_output])
+        toggle.change(lambda visible: gr.update(visible=visible), inputs=toggle, outputs=[full_output])
 
     with gr.Tab("Chat"):
         chat = gr.ChatInterface(
@@ -279,7 +233,6 @@ with gr.Blocks(title="RFID Shelf Dashboard + Chat") as demo:
                 "Show product interaction stats for all headphones at Store C."
             ]
         )
-
 
 if __name__ == "__main__":
     demo.launch()
