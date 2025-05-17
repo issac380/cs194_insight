@@ -18,50 +18,43 @@ def make_rfid_shelf_data():
     dates = pd.date_range('2024-01-01', '2024-01-15', freq='D')
     stores = ['Store A', 'Store B', 'Store C']
     items = [
-        {'item': 'Apple iPhone 15', 'colors': ['Black', 'Silver'], 'specs': ['128GB', '256GB']},
-        {'item': 'Samsung S24 Ultra', 'colors': ['Black', 'Gray'], 'specs': ['256GB', '512GB']},
-        {'item': 'Sony Headphones', 'colors': ['Black'], 'specs': ['Noise Cancelling']},
-        {'item': 'Bose Speaker', 'colors': ['White', 'Blue'], 'specs': ['Wireless']},
+        {'item': 'Sony WH-1000XM5', 'colors': ['Black', 'Cream', 'Blue'], 'specs': ['Noise Cancelling']},
+        {'item': 'Bose QC45', 'colors': ['Black', 'Silver', 'White'], 'specs': ['Noise Cancelling']},
+        {'item': 'Beats Solo 4', 'colors': ['Black', 'Red'], 'specs': ['Standard']},
     ]
-    n_customers = 60
+    n_customers = 50
     customer_ids = [f"C{str(i).zfill(3)}" for i in range(n_customers)]
     records = []
     session_id = 0
+
     for date in dates:
         for store in stores:
-            for _ in range(np.random.randint(10, 19)):
+            for _ in range(np.random.randint(12, 20)):
                 customer = np.random.choice(customer_ids)
                 session_id += 1
-                n_grabbed = np.random.choice([1, 2, 3], p=[0.65, 0.25, 0.1])
-                chosen_items = np.random.choice(len(items), size=n_grabbed, replace=False)
-                purchased_idx = np.random.choice(chosen_items) if np.random.rand() < 0.75 else None
-                for idx in chosen_items:
-                    prod = items[idx]
-                    color = np.random.choice(prod['colors'])
-                    spec = np.random.choice(prod['specs'])
-                    records.append({
-                        'session_id': session_id,
-                        'date': date,
-                        'store': store,
-                        'customer_id': customer,
-                        'item': prod['item'],
-                        'color': color,
-                        'spec': spec,
-                        'event': 'grab'
-                    })
-                    if purchased_idx != idx:
-                        if np.random.rand() < 0.92:
-                            records.append({
-                                'session_id': session_id,
-                                'date': date,
-                                'store': store,
-                                'customer_id': customer,
-                                'item': prod['item'],
-                                'color': color,
-                                'spec': spec,
-                                'event': 'putback'
-                            })
-                    if purchased_idx == idx:
+
+                # 1–2 products per session, higher chance to grab Beats
+                prob = [0.25, 0.35, 0.4]  # Sony, Bose, Beats
+                item_idx = np.random.choice(len(items), p=prob)
+                prod = items[item_idx]
+
+                color = np.random.choice(prod['colors'])
+                spec = np.random.choice(prod['specs'])
+
+                records.append({
+                    'session_id': session_id,
+                    'date': date,
+                    'store': store,
+                    'customer_id': customer,
+                    'item': prod['item'],
+                    'color': color,
+                    'spec': spec,
+                    'event': 'grab'
+                })
+
+                # Purchase likelihood depends on item
+                if prod['item'] == 'Sony WH-1000XM5':
+                    if np.random.rand() < 0.85:
                         records.append({
                             'session_id': session_id,
                             'date': date,
@@ -71,6 +64,66 @@ def make_rfid_shelf_data():
                             'color': color,
                             'spec': spec,
                             'event': 'purchase'
+                        })
+                    else:
+                        records.append({
+                            'session_id': session_id,
+                            'date': date,
+                            'store': store,
+                            'customer_id': customer,
+                            'item': prod['item'],
+                            'color': color,
+                            'spec': spec,
+                            'event': 'putback'
+                        })
+                elif prod['item'] == 'Beats Solo 4':
+                    # People almost always put back, especially red
+                    red_penalty = 0.05 if color == 'Red' else 0.15
+                    if np.random.rand() > red_penalty:
+                        records.append({
+                            'session_id': session_id,
+                            'date': date,
+                            'store': store,
+                            'customer_id': customer,
+                            'item': prod['item'],
+                            'color': color,
+                            'spec': spec,
+                            'event': 'putback'
+                        })
+                    else:
+                        records.append({
+                            'session_id': session_id,
+                            'date': date,
+                            'store': store,
+                            'customer_id': customer,
+                            'item': prod['item'],
+                            'color': color,
+                            'spec': spec,
+                            'event': 'purchase'
+                        })
+                else:  # Bose QC45
+                    # Balanced behavior
+                    if np.random.rand() < 0.5:
+                        records.append({
+                            'session_id': session_id,
+                            'date': date,
+                            'store': store,
+                            'customer_id': customer,
+                            'item': prod['item'],
+                            'color': color,
+                            'spec': spec,
+                            'event': 'purchase'
+                        })
+                    else:
+                        records.append({
+                            'session_id': session_id,
+                            'date': date,
+                            'store': store,
+                            'customer_id': customer,
+                            'item': prod['item'],
+                            'color': color,
+                            'spec': spec,
+                            'event': 'putback'
                         })
     return pd.DataFrame(records)
 
@@ -125,6 +178,34 @@ def analyze_grab_putback(item=None, store=None):
     return insight, plot_to_pil(fig)
 
 # --- Chat LLM/Agent ---
+def generate_sales_report_with_recommendations():
+    # Aggregate item-level stats
+    agg = df.groupby(['item', 'color'])['event'].value_counts().unstack(fill_value=0).reset_index()
+    agg['conversion_rate'] = agg['purchase'] / agg['grab'].replace(0, np.nan)
+    agg.fillna(0, inplace=True)
+
+    # Limit to top ~10 items to stay within token limits
+    top_items = agg.sort_values('grab', ascending=False).head(10)
+    summary = top_items.to_csv(index=False)
+
+    prompt = (
+        "You are a retail analyst AI. Based on the following sales data, identify which items have "
+        "high grab and putback rates but low purchase rates. Recommend one or two items to discount "
+        "in order to improve sales. Suggest reasoning based on product behavior.\n\n"
+        f"{summary}"
+    )
+
+    response = client.chat.completions.create(
+        model="gpt-4o",
+        messages=[
+            {"role": "system", "content": "You are a smart retail strategy assistant."},
+            {"role": "user", "content": prompt}
+        ],
+        temperature=0.4,
+    ).choices[0].message.content.strip()
+
+    return response
+
 def run_agentic_analysis(user_query):
     q = user_query.lower()
     item_match = None
@@ -170,18 +251,35 @@ with gr.Blocks(title="RFID Shelf Dashboard + Chat") as demo:
         btn.click(analyze_grab_putback, inputs=[item_dd, store_dd], outputs=[insight, plot])
         # Optional: auto-run on page load (uncomment if desired)
         # demo.load(analyze_grab_putback, inputs=[item_dd, store_dd], outputs=[insight, plot])
+    
+    with gr.Tab("Sales Report"):
+        gr.Markdown("## 📊 Sales Summary & Business Recommendations")
+        report_btn = gr.Button("Generate Sales Report")
+        report_output = gr.Markdown()
+
+        report_btn.click(
+            fn=lambda: generate_sales_report_with_recommendations(),
+            inputs=[],
+            outputs=[report_output]
+        )
 
     with gr.Tab("Chat"):
         chat = gr.ChatInterface(
             fn=lambda msg, history: run_agentic_analysis(msg),
             additional_outputs=[gr.Image(type="pil", label="Chart/Plot (if relevant)")],
             examples=[
-                "Show interaction rates for Apple iPhone 15 at Store B.",
-                "Which products are most frequently grabbed but not purchased?",
-                "Show conversion rates for Sony Headphones.",
-                "What is the putback rate for Bose Speaker at Store C?",
+                "Show interaction rates for Sony WH-1000XM5 at Store A.",
+                "What is the putback rate for Beats Solo 4?",
+                "How often is the red Beats Solo 4 put back without purchase?",
+                "Which color of Sony WH-1000XM5 is most purchased?",
+                "Compare purchases vs putbacks for Bose QC45.",
+                "What’s the conversion rate for noise cancelling headphones at Store B?",
+                "Do customers prefer Sony or Beats?",
+                "Which headphone model has the highest session conversion rate?",
+                "Show product interaction stats for all headphones at Store C."
             ]
         )
+
 
 if __name__ == "__main__":
     demo.launch()
