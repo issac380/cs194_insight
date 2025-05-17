@@ -3,150 +3,185 @@ import pandas as pd
 import numpy as np
 import gradio as gr
 import matplotlib.pyplot as plt
+import io
 from openai import OpenAI
 from dotenv import load_dotenv
+from PIL import Image
 
-# --- Setup OpenAI and env ---
+# ---------- Setup OpenAI ----------
 load_dotenv()
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-# --- 1. Simulate detailed electronics data with theft events ---
-def make_electronics_data():
-    np.random.seed(42)
-    dates = pd.date_range('2024-01-01', '2024-03-31', freq='D')
+# ---------- 1. Simulate RFID Retail Data ----------
+def make_rfid_shelf_data():
+    np.random.seed(102)
+    dates = pd.date_range('2024-01-01', '2024-01-15', freq='D')
     stores = ['Store A', 'Store B', 'Store C']
-    electronics = [
-        {'item': 'Apple iPhone 15 Pro Max', 'color': 'Black', 'spec': '256GB'},
-        {'item': 'Apple iPhone 15 Pro Max', 'color': 'Silver', 'spec': '512GB'},
-        {'item': 'Samsung Galaxy S24 Ultra', 'color': 'Phantom Black', 'spec': '256GB'},
-        {'item': 'Samsung Galaxy S24 Ultra', 'color': 'Titanium Gray', 'spec': '512GB'},
-        {'item': 'Sony WH-1000XM5 Headphones', 'color': 'Silver', 'spec': 'Noise Cancelling'},
-        {'item': 'Sony WH-1000XM5 Headphones', 'color': 'Black', 'spec': 'Noise Cancelling'},
-        {'item': 'Apple MacBook Pro 16"', 'color': 'Space Gray', 'spec': 'M3 Pro, 16GB RAM, 1TB SSD'},
-        {'item': 'Apple MacBook Air 13"', 'color': 'Midnight', 'spec': 'M2, 8GB RAM, 256GB SSD'},
-        {'item': 'Nintendo Switch OLED', 'color': 'White', 'spec': '64GB'},
-        {'item': 'Bose QuietComfort Ultra', 'color': 'White Smoke', 'spec': 'Wireless'},
-        {'item': 'Microsoft Surface Pro 9', 'color': 'Platinum', 'spec': '16GB RAM, 512GB SSD'},
-        {'item': 'Google Pixel 8 Pro', 'color': 'Bay', 'spec': '128GB'},
-        {'item': 'JBL Charge 5 Speaker', 'color': 'Blue', 'spec': 'Waterproof'},
+    items = [
+        {'item': 'Apple iPhone 15', 'colors': ['Black', 'Silver'], 'specs': ['128GB', '256GB']},
+        {'item': 'Samsung S24 Ultra', 'colors': ['Black', 'Gray'], 'specs': ['256GB', '512GB']},
+        {'item': 'Sony Headphones', 'colors': ['Black'], 'specs': ['Noise Cancelling']},
+        {'item': 'Bose Speaker', 'colors': ['White', 'Blue'], 'specs': ['Wireless']},
     ]
-
+    n_customers = 60
+    customer_ids = [f"C{str(i).zfill(3)}" for i in range(n_customers)]
     records = []
-    for store in stores:
-        for e in electronics:
-            stock = 100
-            for date in dates:
-                sales = np.random.poisson(1.8)
-                theft_prob = 0.08 if "iPhone" in e['item'] or "MacBook" in e['item'] else 0.04
-                theft = np.random.binomial(1, theft_prob)
-                lost_qty = np.random.randint(1, 2) if theft else 0
-                stock = max(0, stock - sales - lost_qty)
-                records.append({
-                    'date': date,
-                    'store': store,
-                    'category': 'Electronics',
-                    'item': e['item'],
-                    'color': e['color'],
-                    'spec': e['spec'],
-                    'sales': sales,
-                    'theft_event': bool(theft),
-                    'theft_qty': lost_qty,
-                    'stock': stock
-                })
+    session_id = 0
+    for date in dates:
+        for store in stores:
+            for _ in range(np.random.randint(10, 19)):
+                customer = np.random.choice(customer_ids)
+                session_id += 1
+                n_grabbed = np.random.choice([1, 2, 3], p=[0.65, 0.25, 0.1])
+                chosen_items = np.random.choice(len(items), size=n_grabbed, replace=False)
+                purchased_idx = np.random.choice(chosen_items) if np.random.rand() < 0.75 else None
+                for idx in chosen_items:
+                    prod = items[idx]
+                    color = np.random.choice(prod['colors'])
+                    spec = np.random.choice(prod['specs'])
+                    records.append({
+                        'session_id': session_id,
+                        'date': date,
+                        'store': store,
+                        'customer_id': customer,
+                        'item': prod['item'],
+                        'color': color,
+                        'spec': spec,
+                        'event': 'grab'
+                    })
+                    if purchased_idx != idx:
+                        if np.random.rand() < 0.92:
+                            records.append({
+                                'session_id': session_id,
+                                'date': date,
+                                'store': store,
+                                'customer_id': customer,
+                                'item': prod['item'],
+                                'color': color,
+                                'spec': spec,
+                                'event': 'putback'
+                            })
+                    if purchased_idx == idx:
+                        records.append({
+                            'session_id': session_id,
+                            'date': date,
+                            'store': store,
+                            'customer_id': customer,
+                            'item': prod['item'],
+                            'color': color,
+                            'spec': spec,
+                            'event': 'purchase'
+                        })
     return pd.DataFrame(records)
 
-# Only generate data if not already done
-DATA_CSV = "electronics_detailed_data.csv"
+# ---------- 2. Load or Generate Data ----------
+DATA_CSV = "rfid_shelf_data.csv"
 if not os.path.exists(DATA_CSV):
-    df = make_electronics_data()
+    df = make_rfid_shelf_data()
     df.to_csv(DATA_CSV, index=False)
 else:
     df = pd.read_csv(DATA_CSV, parse_dates=['date'])
 
-# --- 2. LLM agent function ---
-def generate_insight(store, item, color, spec, theft_focus):
-    sub = df[(df['store'] == store)]
-    if item != "All":
-        sub = sub[sub['item'] == item]
-    if color != "All":
-        sub = sub[sub['color'] == color]
-    if spec != "All":
-        sub = sub[sub['spec'] == spec]
-    thefts = sub['theft_qty'].sum()
-    total_sales = sub['sales'].sum()
-    selection_desc = f"Store: {store}, Item: {item}, Color: {color}, Spec: {spec}"
-    prompt = (
-        f"Retail data for electronics. {selection_desc}.\n"
-        f"Total sales: {total_sales}\n"
-        f"Total theft quantity: {thefts}\n"
-        f"{'Focus especially on theft and loss patterns.' if theft_focus else ''}\n"
-        f"Give 2-3 actionable insights for a store manager to improve performance and reduce theft. Format the response using Markdown."
-    )
-    response = client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=[
-            {"role": "system", "content": "You are a retail analytics assistant who specializes in smart, actionable insights. Format your response using Markdown."},
-            {"role": "user", "content": prompt}
-        ],
-        temperature=0.6,
-    )
-    insight = response.choices[0].message.content.strip()
-    return insight
+# ---------- 3. Backend Analysis Functions ----------
+def plot_to_pil(fig):
+    buf = io.BytesIO()
+    fig.savefig(buf, format='png', bbox_inches='tight')
+    buf.seek(0)
+    return Image.open(buf)
 
-# --- 3. Dashboard plot function ---
-def plot_trends(store, item, color, spec):
-    sub = df[(df['store'] == store)]
-    if item != "All":
+def get_product_list():
+    return sorted(df['item'].unique())
+
+def get_store_list():
+    return sorted(df['store'].unique())
+
+def analyze_grab_putback(item=None, store=None):
+    sub = df.copy()
+    if item and item != "All":
         sub = sub[sub['item'] == item]
-    if color != "All":
-        sub = sub[sub['color'] == color]
-    if spec != "All":
-        sub = sub[sub['spec'] == spec]
-    daily = sub.groupby('date').agg({'sales': 'sum', 'theft_qty': 'sum', 'stock': 'sum'}).reset_index()
-    fig, ax = plt.subplots(figsize=(7, 4))
-    ax.plot(daily['date'], daily['sales'], label="Sales", marker="o", linewidth=1)
-    ax.plot(daily['date'], daily['theft_qty'], label="Theft", marker="x", linestyle="--")
+    if store and store != "All":
+        sub = sub[sub['store'] == store]
+    if len(sub) == 0:
+        return "No product data for your selection.", None
+    grabs = sub[sub['event'] == 'grab']
+    putbacks = sub[sub['event'] == 'putback']
+    purchases = sub[sub['event'] == 'purchase']
+    sessions_with_grab = grabs['session_id'].nunique()
+    sessions_with_purchase = purchases['session_id'].nunique()
+    conversion_rate = sessions_with_purchase / sessions_with_grab if sessions_with_grab else 0
+    insight = (
+        f"**Product:** {item or 'All'}  \n"
+        f"**Store:** {store or 'All'}  \n"
+        f"Total Grabs: {len(grabs)}  \n"
+        f"Total Putbacks: {len(putbacks)}  \n"
+        f"Total Purchases: {len(purchases)}  \n"
+        f"Session Conversion Rate: {conversion_rate:.0%}  \n"
+    )
+    fig, ax = plt.subplots(figsize=(5,3))
+    ax.bar(['Grabs', 'Putbacks', 'Purchases'], [len(grabs), len(putbacks), len(purchases)], color=["#9cf","#fa8","#7a8"])
     ax.set_ylabel("Count")
-    ax.set_xlabel("Date")
-    ax.set_title(f"Sales & Theft Trends - {store}" + (f" / {item}" if item != "All" else ""))
-    ax.legend()
+    ax.set_title("Product Interactions")
     fig.tight_layout()
-    return fig
+    return insight, plot_to_pil(fig)
 
-# --- 4. Gradio front end ---
-def dashboard(store, item, color, spec, theft_focus):
-    insights = generate_insight(store, item, color, spec, theft_focus)
-    fig = plot_trends(store, item, color, spec)
-    return insights, fig
-
-with gr.Blocks(title="Electronics Retail LLM Dashboard") as demo:
-    gr.Markdown("# 📱 Detailed Electronics Retail Insights Dashboard")
-    gr.Markdown("**Filter by store, model, color, and specs to see sales & theft trends and LLM insights.**")
-    with gr.Row():
-        store = gr.Dropdown(list(df['store'].unique()), label="Store", value="Store A")
-        def item_choices(): return ["All"] + list(df['item'].unique())
-        item = gr.Dropdown(choices=item_choices(), label="Model", value="All")
-        def color_choices(): return ["All"] + list(df['color'].unique())
-        color = gr.Dropdown(choices=color_choices(), label="Color", value="All")
-        def spec_choices(): return ["All"] + list(df['spec'].unique())
-        spec = gr.Dropdown(choices=spec_choices(), label="Spec", value="All")
-        theft_focus = gr.Checkbox(label="Focus insights on theft/loss?", value=True)
-    with gr.Row():
-        insights = gr.Markdown(label="LLM Smart Insights")
-    chart = gr.Plot(label="Trends Dashboard")
-    btn = gr.Button("Generate Insights & Dashboard")
-    btn.click(
-        dashboard, 
-        inputs=[store, item, color, spec, theft_focus], 
-        outputs=[insights, chart]
+# --- Chat LLM/Agent ---
+def run_agentic_analysis(user_query):
+    q = user_query.lower()
+    item_match = None
+    store_match = None
+    for prod in get_product_list():
+        if prod.lower() in q:
+            item_match = prod
+            break
+    for st in get_store_list():
+        if st.lower() in q:
+            store_match = st
+            break
+    # Keywords trigger dashboard analysis with plot
+    if ('grab' in q or 'putback' in q or 'purchase' in q or 'conversion' in q or 'frequency' in q or 'rate' in q or 'interact' in q):
+        return analyze_grab_putback(item=item_match, store=store_match)
+    # Fallback: LLM text only
+    llm_prompt = (
+        "You are an expert retail analytics assistant. "
+        "The user has queried: " + user_query +
+        "\nIf you can answer with the available data, please do, otherwise explain what data would be needed."
     )
+    llm_response = client.chat.completions.create(
+        model="gpt-4o",
+        messages=[{"role":"system", "content":"You are a retail analytics expert."},
+                  {"role":"user", "content": llm_prompt}],
+        temperature=0.4,
+    ).choices[0].message.content.strip()
+    return llm_response, None
 
-    # Initial auto-run
-    demo.load(
-        dashboard,
-        inputs=[store, item, color, spec, theft_focus],
-        outputs=[insights, chart]
-    )
+# ---------- 4. Gradio UI (Chat + Dashboard) ----------
+with gr.Blocks(title="RFID Shelf Dashboard + Chat") as demo:
+    gr.Markdown("# 🛒 RFID Shelf Dashboard + Agentic Chat")
+    gr.Markdown("Interact by **dropdown** or **chat**. See product grabs/putbacks/purchases and conversion rates for any product and store.")
+    
+    with gr.Tab("Dashboard"):
+        with gr.Row():
+            store_dd = gr.Dropdown(["All"] + get_store_list(), value="All", label="Store")
+            item_dd = gr.Dropdown(["All"] + get_product_list(), value="All", label="Product")
+        with gr.Row():
+            btn = gr.Button("Generate Analysis")
+        insight = gr.Markdown(label="Insight")
+        plot = gr.Image(type="pil", label="Plot")
+        btn.click(analyze_grab_putback, inputs=[item_dd, store_dd], outputs=[insight, plot])
+        # Optional: auto-run on page load (uncomment if desired)
+        # demo.load(analyze_grab_putback, inputs=[item_dd, store_dd], outputs=[insight, plot])
 
-if __name__ == '__main__':
+    with gr.Tab("Chat"):
+        chat = gr.ChatInterface(
+            fn=lambda msg, history: run_agentic_analysis(msg),
+            additional_outputs=[gr.Image(type="pil", label="Chart/Plot (if relevant)")],
+            examples=[
+                "Show interaction rates for Apple iPhone 15 at Store B.",
+                "Which products are most frequently grabbed but not purchased?",
+                "Show conversion rates for Sony Headphones.",
+                "What is the putback rate for Bose Speaker at Store C?",
+            ]
+        )
+
+if __name__ == "__main__":
     demo.launch()

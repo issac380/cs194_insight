@@ -1,0 +1,1705 @@
+session_id,date,store,customer_id,item,color,spec,event
+1,2024-01-01,Store A,C051,Apple iPhone 15,Black,256GB,grab
+1,2024-01-01,Store A,C051,Apple iPhone 15,Black,256GB,putback
+1,2024-01-01,Store A,C051,Samsung S24 Ultra,Black,512GB,grab
+1,2024-01-01,Store A,C051,Samsung S24 Ultra,Black,512GB,purchase
+2,2024-01-01,Store A,C048,Samsung S24 Ultra,Gray,512GB,grab
+2,2024-01-01,Store A,C048,Samsung S24 Ultra,Gray,512GB,purchase
+3,2024-01-01,Store A,C028,Samsung S24 Ultra,Gray,512GB,grab
+3,2024-01-01,Store A,C028,Samsung S24 Ultra,Gray,512GB,purchase
+4,2024-01-01,Store A,C002,Bose Speaker,White,Wireless,grab
+4,2024-01-01,Store A,C002,Bose Speaker,White,Wireless,purchase
+4,2024-01-01,Store A,C002,Apple iPhone 15,Silver,256GB,grab
+4,2024-01-01,Store A,C002,Apple iPhone 15,Silver,256GB,putback
+5,2024-01-01,Store A,C044,Apple iPhone 15,Silver,128GB,grab
+5,2024-01-01,Store A,C044,Apple iPhone 15,Silver,128GB,putback
+5,2024-01-01,Store A,C044,Samsung S24 Ultra,Gray,256GB,grab
+5,2024-01-01,Store A,C044,Samsung S24 Ultra,Gray,256GB,purchase
+5,2024-01-01,Store A,C044,Sony Headphones,Black,Noise Cancelling,grab
+5,2024-01-01,Store A,C044,Sony Headphones,Black,Noise Cancelling,putback
+6,2024-01-01,Store A,C014,Samsung S24 Ultra,Gray,512GB,grab
+6,2024-01-01,Store A,C014,Samsung S24 Ultra,Gray,512GB,purchase
+7,2024-01-01,Store A,C027,Apple iPhone 15,Black,256GB,grab
+7,2024-01-01,Store A,C027,Apple iPhone 15,Black,256GB,putback
+7,2024-01-01,Store A,C027,Bose Speaker,White,Wireless,grab
+7,2024-01-01,Store A,C027,Bose Speaker,White,Wireless,purchase
+8,2024-01-01,Store A,C036,Samsung S24 Ultra,Black,512GB,grab
+8,2024-01-01,Store A,C036,Samsung S24 Ultra,Black,512GB,purchase
+9,2024-01-01,Store A,C010,Bose Speaker,Blue,Wireless,grab
+9,2024-01-01,Store A,C010,Bose Speaker,Blue,Wireless,purchase
+10,2024-01-01,Store A,C002,Sony Headphones,Black,Noise Cancelling,grab
+10,2024-01-01,Store A,C002,Sony Headphones,Black,Noise Cancelling,purchase
+10,2024-01-01,Store A,C002,Samsung S24 Ultra,Black,512GB,grab
+10,2024-01-01,Store A,C002,Samsung S24 Ultra,Black,512GB,putback
+11,2024-01-01,Store B,C027,Samsung S24 Ultra,Gray,512GB,grab
+11,2024-01-01,Store B,C027,Samsung S24 Ultra,Gray,512GB,putback
+11,2024-01-01,Store B,C027,Bose Speaker,Blue,Wireless,grab
+11,2024-01-01,Store B,C027,Bose Speaker,Blue,Wireless,purchase
+12,2024-01-01,Store B,C050,Sony Headphones,Black,Noise Cancelling,grab
+12,2024-01-01,Store B,C050,Sony Headphones,Black,Noise Cancelling,purchase
+12,2024-01-01,Store B,C050,Apple iPhone 15,Silver,256GB,grab
+12,2024-01-01,Store B,C050,Apple iPhone 15,Silver,256GB,putback
+12,2024-01-01,Store B,C050,Samsung S24 Ultra,Black,256GB,grab
+13,2024-01-01,Store B,C051,Apple iPhone 15,Silver,128GB,grab
+13,2024-01-01,Store B,C051,Apple iPhone 15,Silver,128GB,purchase
+14,2024-01-01,Store B,C058,Samsung S24 Ultra,Black,512GB,grab
+14,2024-01-01,Store B,C058,Samsung S24 Ultra,Black,512GB,purchase
+14,2024-01-01,Store B,C058,Apple iPhone 15,Silver,256GB,grab
+14,2024-01-01,Store B,C058,Apple iPhone 15,Silver,256GB,putback
+14,2024-01-01,Store B,C058,Bose Speaker,Blue,Wireless,grab
+15,2024-01-01,Store B,C038,Sony Headphones,Black,Noise Cancelling,grab
+15,2024-01-01,Store B,C038,Sony Headphones,Black,Noise Cancelling,purchase
+16,2024-01-01,Store B,C032,Apple iPhone 15,Black,256GB,grab
+16,2024-01-01,Store B,C032,Apple iPhone 15,Black,256GB,purchase
+17,2024-01-01,Store B,C011,Samsung S24 Ultra,Black,512GB,grab
+17,2024-01-01,Store B,C011,Samsung S24 Ultra,Black,512GB,putback
+18,2024-01-01,Store B,C032,Bose Speaker,Blue,Wireless,grab
+18,2024-01-01,Store B,C032,Bose Speaker,Blue,Wireless,purchase
+19,2024-01-01,Store B,C031,Apple iPhone 15,Black,256GB,grab
+19,2024-01-01,Store B,C031,Apple iPhone 15,Black,256GB,purchase
+20,2024-01-01,Store B,C056,Apple iPhone 15,Black,256GB,grab
+20,2024-01-01,Store B,C056,Apple iPhone 15,Black,256GB,purchase
+21,2024-01-01,Store B,C006,Sony Headphones,Black,Noise Cancelling,grab
+21,2024-01-01,Store B,C006,Sony Headphones,Black,Noise Cancelling,purchase
+22,2024-01-01,Store B,C042,Apple iPhone 15,Black,128GB,grab
+22,2024-01-01,Store B,C042,Apple iPhone 15,Black,128GB,putback
+22,2024-01-01,Store B,C042,Sony Headphones,Black,Noise Cancelling,grab
+22,2024-01-01,Store B,C042,Sony Headphones,Black,Noise Cancelling,purchase
+23,2024-01-01,Store B,C056,Bose Speaker,Blue,Wireless,grab
+23,2024-01-01,Store B,C056,Bose Speaker,Blue,Wireless,purchase
+24,2024-01-01,Store B,C036,Sony Headphones,Black,Noise Cancelling,grab
+24,2024-01-01,Store B,C036,Sony Headphones,Black,Noise Cancelling,putback
+25,2024-01-01,Store B,C011,Samsung S24 Ultra,Black,512GB,grab
+25,2024-01-01,Store B,C011,Samsung S24 Ultra,Black,512GB,putback
+25,2024-01-01,Store B,C011,Sony Headphones,Black,Noise Cancelling,grab
+25,2024-01-01,Store B,C011,Sony Headphones,Black,Noise Cancelling,purchase
+26,2024-01-01,Store C,C004,Bose Speaker,White,Wireless,grab
+26,2024-01-01,Store C,C004,Bose Speaker,White,Wireless,purchase
+27,2024-01-01,Store C,C013,Apple iPhone 15,Silver,128GB,grab
+27,2024-01-01,Store C,C013,Apple iPhone 15,Silver,128GB,putback
+28,2024-01-01,Store C,C013,Bose Speaker,Blue,Wireless,grab
+28,2024-01-01,Store C,C013,Bose Speaker,Blue,Wireless,purchase
+29,2024-01-01,Store C,C017,Bose Speaker,Blue,Wireless,grab
+29,2024-01-01,Store C,C017,Bose Speaker,Blue,Wireless,purchase
+30,2024-01-01,Store C,C027,Samsung S24 Ultra,Black,512GB,grab
+30,2024-01-01,Store C,C027,Samsung S24 Ultra,Black,512GB,putback
+30,2024-01-01,Store C,C027,Bose Speaker,White,Wireless,grab
+30,2024-01-01,Store C,C027,Bose Speaker,White,Wireless,purchase
+31,2024-01-01,Store C,C012,Apple iPhone 15,Black,256GB,grab
+31,2024-01-01,Store C,C012,Apple iPhone 15,Black,256GB,putback
+31,2024-01-01,Store C,C012,Samsung S24 Ultra,Gray,256GB,grab
+31,2024-01-01,Store C,C012,Samsung S24 Ultra,Gray,256GB,purchase
+32,2024-01-01,Store C,C026,Bose Speaker,Blue,Wireless,grab
+32,2024-01-01,Store C,C026,Bose Speaker,Blue,Wireless,putback
+32,2024-01-01,Store C,C026,Apple iPhone 15,Black,256GB,grab
+32,2024-01-01,Store C,C026,Apple iPhone 15,Black,256GB,putback
+33,2024-01-01,Store C,C015,Apple iPhone 15,Silver,256GB,grab
+33,2024-01-01,Store C,C015,Apple iPhone 15,Silver,256GB,purchase
+34,2024-01-01,Store C,C051,Bose Speaker,Blue,Wireless,grab
+34,2024-01-01,Store C,C051,Bose Speaker,Blue,Wireless,purchase
+34,2024-01-01,Store C,C051,Apple iPhone 15,Silver,128GB,grab
+34,2024-01-01,Store C,C051,Apple iPhone 15,Silver,128GB,putback
+35,2024-01-01,Store C,C035,Apple iPhone 15,Silver,256GB,grab
+35,2024-01-01,Store C,C035,Apple iPhone 15,Silver,256GB,putback
+35,2024-01-01,Store C,C035,Samsung S24 Ultra,Black,256GB,grab
+35,2024-01-01,Store C,C035,Samsung S24 Ultra,Black,256GB,putback
+35,2024-01-01,Store C,C035,Bose Speaker,Blue,Wireless,grab
+35,2024-01-01,Store C,C035,Bose Speaker,Blue,Wireless,putback
+36,2024-01-01,Store C,C000,Bose Speaker,White,Wireless,grab
+36,2024-01-01,Store C,C000,Bose Speaker,White,Wireless,purchase
+37,2024-01-01,Store C,C045,Apple iPhone 15,Black,256GB,grab
+37,2024-01-01,Store C,C045,Apple iPhone 15,Black,256GB,putback
+37,2024-01-01,Store C,C045,Samsung S24 Ultra,Gray,512GB,grab
+38,2024-01-01,Store C,C030,Apple iPhone 15,Black,256GB,grab
+38,2024-01-01,Store C,C030,Apple iPhone 15,Black,256GB,purchase
+39,2024-01-02,Store A,C036,Samsung S24 Ultra,Gray,512GB,grab
+40,2024-01-02,Store A,C043,Bose Speaker,Blue,Wireless,grab
+40,2024-01-02,Store A,C043,Bose Speaker,Blue,Wireless,purchase
+41,2024-01-02,Store A,C056,Apple iPhone 15,Black,256GB,grab
+41,2024-01-02,Store A,C056,Apple iPhone 15,Black,256GB,purchase
+42,2024-01-02,Store A,C033,Samsung S24 Ultra,Gray,256GB,grab
+42,2024-01-02,Store A,C033,Samsung S24 Ultra,Gray,256GB,putback
+42,2024-01-02,Store A,C033,Apple iPhone 15,Silver,128GB,grab
+42,2024-01-02,Store A,C033,Apple iPhone 15,Silver,128GB,putback
+42,2024-01-02,Store A,C033,Sony Headphones,Black,Noise Cancelling,grab
+42,2024-01-02,Store A,C033,Sony Headphones,Black,Noise Cancelling,purchase
+43,2024-01-02,Store A,C033,Samsung S24 Ultra,Gray,512GB,grab
+43,2024-01-02,Store A,C033,Samsung S24 Ultra,Gray,512GB,putback
+44,2024-01-02,Store A,C007,Samsung S24 Ultra,Gray,256GB,grab
+44,2024-01-02,Store A,C007,Samsung S24 Ultra,Gray,256GB,putback
+45,2024-01-02,Store A,C025,Apple iPhone 15,Silver,128GB,grab
+45,2024-01-02,Store A,C025,Apple iPhone 15,Silver,128GB,putback
+46,2024-01-02,Store A,C025,Bose Speaker,Blue,Wireless,grab
+46,2024-01-02,Store A,C025,Bose Speaker,Blue,Wireless,putback
+47,2024-01-02,Store A,C000,Samsung S24 Ultra,Black,512GB,grab
+47,2024-01-02,Store A,C000,Samsung S24 Ultra,Black,512GB,putback
+47,2024-01-02,Store A,C000,Apple iPhone 15,Silver,256GB,grab
+47,2024-01-02,Store A,C000,Apple iPhone 15,Silver,256GB,purchase
+48,2024-01-02,Store A,C048,Samsung S24 Ultra,Black,512GB,grab
+48,2024-01-02,Store A,C048,Samsung S24 Ultra,Black,512GB,putback
+48,2024-01-02,Store A,C048,Sony Headphones,Black,Noise Cancelling,grab
+48,2024-01-02,Store A,C048,Sony Headphones,Black,Noise Cancelling,putback
+49,2024-01-02,Store A,C047,Bose Speaker,Blue,Wireless,grab
+49,2024-01-02,Store A,C047,Bose Speaker,Blue,Wireless,purchase
+49,2024-01-02,Store A,C047,Samsung S24 Ultra,Gray,512GB,grab
+49,2024-01-02,Store A,C047,Samsung S24 Ultra,Gray,512GB,putback
+50,2024-01-02,Store A,C018,Bose Speaker,Blue,Wireless,grab
+50,2024-01-02,Store A,C018,Bose Speaker,Blue,Wireless,purchase
+51,2024-01-02,Store B,C048,Bose Speaker,White,Wireless,grab
+51,2024-01-02,Store B,C048,Bose Speaker,White,Wireless,putback
+51,2024-01-02,Store B,C048,Sony Headphones,Black,Noise Cancelling,grab
+51,2024-01-02,Store B,C048,Sony Headphones,Black,Noise Cancelling,putback
+52,2024-01-02,Store B,C059,Sony Headphones,Black,Noise Cancelling,grab
+52,2024-01-02,Store B,C059,Sony Headphones,Black,Noise Cancelling,purchase
+53,2024-01-02,Store B,C053,Apple iPhone 15,Black,128GB,grab
+53,2024-01-02,Store B,C053,Apple iPhone 15,Black,128GB,putback
+54,2024-01-02,Store B,C055,Sony Headphones,Black,Noise Cancelling,grab
+54,2024-01-02,Store B,C055,Sony Headphones,Black,Noise Cancelling,purchase
+55,2024-01-02,Store B,C011,Bose Speaker,Blue,Wireless,grab
+55,2024-01-02,Store B,C011,Bose Speaker,Blue,Wireless,purchase
+56,2024-01-02,Store B,C002,Bose Speaker,Blue,Wireless,grab
+56,2024-01-02,Store B,C002,Bose Speaker,Blue,Wireless,purchase
+56,2024-01-02,Store B,C002,Apple iPhone 15,Black,128GB,grab
+56,2024-01-02,Store B,C002,Apple iPhone 15,Black,128GB,putback
+57,2024-01-02,Store B,C054,Samsung S24 Ultra,Black,512GB,grab
+57,2024-01-02,Store B,C054,Samsung S24 Ultra,Black,512GB,purchase
+58,2024-01-02,Store B,C055,Apple iPhone 15,Silver,256GB,grab
+58,2024-01-02,Store B,C055,Apple iPhone 15,Silver,256GB,purchase
+59,2024-01-02,Store B,C058,Sony Headphones,Black,Noise Cancelling,grab
+59,2024-01-02,Store B,C058,Sony Headphones,Black,Noise Cancelling,purchase
+60,2024-01-02,Store B,C040,Apple iPhone 15,Silver,256GB,grab
+60,2024-01-02,Store B,C040,Apple iPhone 15,Silver,256GB,purchase
+61,2024-01-02,Store B,C028,Sony Headphones,Black,Noise Cancelling,grab
+61,2024-01-02,Store B,C028,Sony Headphones,Black,Noise Cancelling,purchase
+62,2024-01-02,Store B,C038,Sony Headphones,Black,Noise Cancelling,grab
+62,2024-01-02,Store B,C038,Sony Headphones,Black,Noise Cancelling,putback
+62,2024-01-02,Store B,C038,Samsung S24 Ultra,Black,256GB,grab
+62,2024-01-02,Store B,C038,Samsung S24 Ultra,Black,256GB,putback
+63,2024-01-02,Store B,C017,Bose Speaker,White,Wireless,grab
+63,2024-01-02,Store B,C017,Bose Speaker,White,Wireless,purchase
+64,2024-01-02,Store B,C043,Bose Speaker,White,Wireless,grab
+64,2024-01-02,Store B,C043,Bose Speaker,White,Wireless,putback
+64,2024-01-02,Store B,C043,Apple iPhone 15,Silver,256GB,grab
+64,2024-01-02,Store B,C043,Apple iPhone 15,Silver,256GB,putback
+65,2024-01-02,Store B,C024,Sony Headphones,Black,Noise Cancelling,grab
+65,2024-01-02,Store B,C024,Sony Headphones,Black,Noise Cancelling,purchase
+66,2024-01-02,Store C,C009,Samsung S24 Ultra,Black,256GB,grab
+66,2024-01-02,Store C,C009,Samsung S24 Ultra,Black,256GB,putback
+66,2024-01-02,Store C,C009,Apple iPhone 15,Black,256GB,grab
+66,2024-01-02,Store C,C009,Apple iPhone 15,Black,256GB,purchase
+66,2024-01-02,Store C,C009,Bose Speaker,Blue,Wireless,grab
+66,2024-01-02,Store C,C009,Bose Speaker,Blue,Wireless,putback
+67,2024-01-02,Store C,C050,Samsung S24 Ultra,Gray,256GB,grab
+67,2024-01-02,Store C,C050,Samsung S24 Ultra,Gray,256GB,putback
+67,2024-01-02,Store C,C050,Apple iPhone 15,Silver,256GB,grab
+67,2024-01-02,Store C,C050,Apple iPhone 15,Silver,256GB,purchase
+68,2024-01-02,Store C,C041,Apple iPhone 15,Black,256GB,grab
+68,2024-01-02,Store C,C041,Apple iPhone 15,Black,256GB,putback
+68,2024-01-02,Store C,C041,Sony Headphones,Black,Noise Cancelling,grab
+68,2024-01-02,Store C,C041,Sony Headphones,Black,Noise Cancelling,purchase
+69,2024-01-02,Store C,C055,Samsung S24 Ultra,Black,512GB,grab
+69,2024-01-02,Store C,C055,Samsung S24 Ultra,Black,512GB,purchase
+70,2024-01-02,Store C,C023,Apple iPhone 15,Black,128GB,grab
+70,2024-01-02,Store C,C023,Apple iPhone 15,Black,128GB,purchase
+71,2024-01-02,Store C,C040,Bose Speaker,White,Wireless,grab
+71,2024-01-02,Store C,C040,Bose Speaker,White,Wireless,purchase
+72,2024-01-02,Store C,C024,Sony Headphones,Black,Noise Cancelling,grab
+72,2024-01-02,Store C,C024,Sony Headphones,Black,Noise Cancelling,purchase
+73,2024-01-02,Store C,C037,Apple iPhone 15,Black,128GB,grab
+73,2024-01-02,Store C,C037,Apple iPhone 15,Black,128GB,purchase
+73,2024-01-02,Store C,C037,Sony Headphones,Black,Noise Cancelling,grab
+73,2024-01-02,Store C,C037,Sony Headphones,Black,Noise Cancelling,putback
+74,2024-01-02,Store C,C003,Samsung S24 Ultra,Gray,256GB,grab
+74,2024-01-02,Store C,C003,Samsung S24 Ultra,Gray,256GB,purchase
+75,2024-01-02,Store C,C048,Bose Speaker,Blue,Wireless,grab
+75,2024-01-02,Store C,C048,Bose Speaker,Blue,Wireless,putback
+75,2024-01-02,Store C,C048,Sony Headphones,Black,Noise Cancelling,grab
+75,2024-01-02,Store C,C048,Sony Headphones,Black,Noise Cancelling,purchase
+76,2024-01-02,Store C,C007,Apple iPhone 15,Black,128GB,grab
+76,2024-01-02,Store C,C007,Apple iPhone 15,Black,128GB,purchase
+77,2024-01-03,Store A,C037,Samsung S24 Ultra,Black,256GB,grab
+77,2024-01-03,Store A,C037,Samsung S24 Ultra,Black,256GB,purchase
+78,2024-01-03,Store A,C003,Samsung S24 Ultra,Gray,256GB,grab
+78,2024-01-03,Store A,C003,Samsung S24 Ultra,Gray,256GB,putback
+78,2024-01-03,Store A,C003,Apple iPhone 15,Black,256GB,grab
+78,2024-01-03,Store A,C003,Apple iPhone 15,Black,256GB,putback
+79,2024-01-03,Store A,C023,Bose Speaker,Blue,Wireless,grab
+79,2024-01-03,Store A,C023,Bose Speaker,Blue,Wireless,purchase
+79,2024-01-03,Store A,C023,Samsung S24 Ultra,Black,512GB,grab
+79,2024-01-03,Store A,C023,Samsung S24 Ultra,Black,512GB,putback
+80,2024-01-03,Store A,C032,Apple iPhone 15,Silver,128GB,grab
+80,2024-01-03,Store A,C032,Apple iPhone 15,Silver,128GB,putback
+80,2024-01-03,Store A,C032,Sony Headphones,Black,Noise Cancelling,grab
+80,2024-01-03,Store A,C032,Sony Headphones,Black,Noise Cancelling,putback
+80,2024-01-03,Store A,C032,Bose Speaker,Blue,Wireless,grab
+80,2024-01-03,Store A,C032,Bose Speaker,Blue,Wireless,purchase
+81,2024-01-03,Store A,C011,Sony Headphones,Black,Noise Cancelling,grab
+81,2024-01-03,Store A,C011,Apple iPhone 15,Black,128GB,grab
+81,2024-01-03,Store A,C011,Apple iPhone 15,Black,128GB,purchase
+82,2024-01-03,Store A,C032,Samsung S24 Ultra,Gray,512GB,grab
+82,2024-01-03,Store A,C032,Samsung S24 Ultra,Gray,512GB,purchase
+83,2024-01-03,Store A,C031,Bose Speaker,Blue,Wireless,grab
+83,2024-01-03,Store A,C031,Bose Speaker,Blue,Wireless,putback
+83,2024-01-03,Store A,C031,Samsung S24 Ultra,Gray,256GB,grab
+83,2024-01-03,Store A,C031,Samsung S24 Ultra,Gray,256GB,purchase
+84,2024-01-03,Store A,C048,Samsung S24 Ultra,Gray,256GB,grab
+84,2024-01-03,Store A,C048,Samsung S24 Ultra,Gray,256GB,putback
+85,2024-01-03,Store A,C051,Sony Headphones,Black,Noise Cancelling,grab
+85,2024-01-03,Store A,C051,Sony Headphones,Black,Noise Cancelling,putback
+86,2024-01-03,Store A,C017,Sony Headphones,Black,Noise Cancelling,grab
+86,2024-01-03,Store A,C017,Sony Headphones,Black,Noise Cancelling,purchase
+87,2024-01-03,Store A,C043,Samsung S24 Ultra,Black,512GB,grab
+87,2024-01-03,Store A,C043,Samsung S24 Ultra,Black,512GB,purchase
+88,2024-01-03,Store A,C025,Sony Headphones,Black,Noise Cancelling,grab
+88,2024-01-03,Store A,C025,Sony Headphones,Black,Noise Cancelling,putback
+89,2024-01-03,Store B,C046,Bose Speaker,White,Wireless,grab
+89,2024-01-03,Store B,C046,Bose Speaker,White,Wireless,purchase
+90,2024-01-03,Store B,C057,Apple iPhone 15,Black,256GB,grab
+90,2024-01-03,Store B,C057,Apple iPhone 15,Black,256GB,putback
+90,2024-01-03,Store B,C057,Samsung S24 Ultra,Black,512GB,grab
+90,2024-01-03,Store B,C057,Samsung S24 Ultra,Black,512GB,purchase
+91,2024-01-03,Store B,C055,Samsung S24 Ultra,Black,512GB,grab
+91,2024-01-03,Store B,C055,Apple iPhone 15,Silver,128GB,grab
+91,2024-01-03,Store B,C055,Apple iPhone 15,Silver,128GB,purchase
+91,2024-01-03,Store B,C055,Sony Headphones,Black,Noise Cancelling,grab
+91,2024-01-03,Store B,C055,Sony Headphones,Black,Noise Cancelling,putback
+92,2024-01-03,Store B,C031,Bose Speaker,White,Wireless,grab
+92,2024-01-03,Store B,C031,Bose Speaker,White,Wireless,purchase
+93,2024-01-03,Store B,C027,Bose Speaker,Blue,Wireless,grab
+93,2024-01-03,Store B,C027,Bose Speaker,Blue,Wireless,purchase
+94,2024-01-03,Store B,C023,Sony Headphones,Black,Noise Cancelling,grab
+94,2024-01-03,Store B,C023,Sony Headphones,Black,Noise Cancelling,purchase
+95,2024-01-03,Store B,C017,Bose Speaker,White,Wireless,grab
+95,2024-01-03,Store B,C017,Bose Speaker,White,Wireless,putback
+95,2024-01-03,Store B,C017,Apple iPhone 15,Black,128GB,grab
+95,2024-01-03,Store B,C017,Apple iPhone 15,Black,128GB,purchase
+96,2024-01-03,Store B,C001,Sony Headphones,Black,Noise Cancelling,grab
+96,2024-01-03,Store B,C001,Sony Headphones,Black,Noise Cancelling,purchase
+97,2024-01-03,Store B,C013,Bose Speaker,Blue,Wireless,grab
+97,2024-01-03,Store B,C013,Bose Speaker,Blue,Wireless,putback
+98,2024-01-03,Store B,C029,Samsung S24 Ultra,Gray,512GB,grab
+98,2024-01-03,Store B,C029,Samsung S24 Ultra,Gray,512GB,putback
+98,2024-01-03,Store B,C029,Bose Speaker,Blue,Wireless,grab
+98,2024-01-03,Store B,C029,Bose Speaker,Blue,Wireless,putback
+99,2024-01-03,Store B,C027,Samsung S24 Ultra,Black,512GB,grab
+99,2024-01-03,Store B,C027,Samsung S24 Ultra,Black,512GB,putback
+100,2024-01-03,Store B,C006,Apple iPhone 15,Black,128GB,grab
+100,2024-01-03,Store B,C006,Samsung S24 Ultra,Gray,512GB,grab
+100,2024-01-03,Store B,C006,Samsung S24 Ultra,Gray,512GB,purchase
+101,2024-01-03,Store B,C058,Bose Speaker,White,Wireless,grab
+101,2024-01-03,Store B,C058,Bose Speaker,White,Wireless,putback
+101,2024-01-03,Store B,C058,Samsung S24 Ultra,Black,512GB,grab
+101,2024-01-03,Store B,C058,Samsung S24 Ultra,Black,512GB,purchase
+102,2024-01-03,Store B,C025,Apple iPhone 15,Silver,256GB,grab
+102,2024-01-03,Store B,C025,Apple iPhone 15,Silver,256GB,purchase
+103,2024-01-03,Store B,C005,Sony Headphones,Black,Noise Cancelling,grab
+103,2024-01-03,Store B,C005,Sony Headphones,Black,Noise Cancelling,putback
+103,2024-01-03,Store B,C005,Samsung S24 Ultra,Black,256GB,grab
+103,2024-01-03,Store B,C005,Samsung S24 Ultra,Black,256GB,putback
+103,2024-01-03,Store B,C005,Apple iPhone 15,Black,128GB,grab
+103,2024-01-03,Store B,C005,Apple iPhone 15,Black,128GB,putback
+104,2024-01-03,Store B,C006,Apple iPhone 15,Black,128GB,grab
+104,2024-01-03,Store B,C006,Apple iPhone 15,Black,128GB,putback
+105,2024-01-03,Store B,C026,Apple iPhone 15,Silver,128GB,grab
+105,2024-01-03,Store B,C026,Apple iPhone 15,Silver,128GB,purchase
+106,2024-01-03,Store C,C028,Bose Speaker,Blue,Wireless,grab
+106,2024-01-03,Store C,C028,Bose Speaker,Blue,Wireless,purchase
+107,2024-01-03,Store C,C005,Samsung S24 Ultra,Black,512GB,grab
+107,2024-01-03,Store C,C005,Samsung S24 Ultra,Black,512GB,putback
+108,2024-01-03,Store C,C014,Bose Speaker,White,Wireless,grab
+109,2024-01-03,Store C,C041,Sony Headphones,Black,Noise Cancelling,grab
+109,2024-01-03,Store C,C041,Sony Headphones,Black,Noise Cancelling,putback
+109,2024-01-03,Store C,C041,Samsung S24 Ultra,Gray,256GB,grab
+109,2024-01-03,Store C,C041,Samsung S24 Ultra,Gray,256GB,putback
+109,2024-01-03,Store C,C041,Apple iPhone 15,Black,128GB,grab
+110,2024-01-03,Store C,C037,Samsung S24 Ultra,Black,512GB,grab
+110,2024-01-03,Store C,C037,Samsung S24 Ultra,Black,512GB,putback
+111,2024-01-03,Store C,C010,Sony Headphones,Black,Noise Cancelling,grab
+111,2024-01-03,Store C,C010,Sony Headphones,Black,Noise Cancelling,purchase
+112,2024-01-03,Store C,C051,Samsung S24 Ultra,Black,512GB,grab
+112,2024-01-03,Store C,C051,Samsung S24 Ultra,Black,512GB,putback
+112,2024-01-03,Store C,C051,Sony Headphones,Black,Noise Cancelling,grab
+112,2024-01-03,Store C,C051,Sony Headphones,Black,Noise Cancelling,putback
+112,2024-01-03,Store C,C051,Bose Speaker,Blue,Wireless,grab
+112,2024-01-03,Store C,C051,Bose Speaker,Blue,Wireless,putback
+113,2024-01-03,Store C,C056,Apple iPhone 15,Silver,128GB,grab
+113,2024-01-03,Store C,C056,Apple iPhone 15,Silver,128GB,purchase
+113,2024-01-03,Store C,C056,Samsung S24 Ultra,Gray,256GB,grab
+113,2024-01-03,Store C,C056,Samsung S24 Ultra,Gray,256GB,putback
+114,2024-01-03,Store C,C042,Bose Speaker,Blue,Wireless,grab
+114,2024-01-03,Store C,C042,Bose Speaker,Blue,Wireless,purchase
+114,2024-01-03,Store C,C042,Apple iPhone 15,Silver,128GB,grab
+114,2024-01-03,Store C,C042,Apple iPhone 15,Silver,128GB,putback
+115,2024-01-03,Store C,C001,Samsung S24 Ultra,Gray,512GB,grab
+115,2024-01-03,Store C,C001,Samsung S24 Ultra,Gray,512GB,putback
+116,2024-01-04,Store A,C028,Bose Speaker,Blue,Wireless,grab
+116,2024-01-04,Store A,C028,Bose Speaker,Blue,Wireless,purchase
+116,2024-01-04,Store A,C028,Apple iPhone 15,Black,256GB,grab
+116,2024-01-04,Store A,C028,Apple iPhone 15,Black,256GB,putback
+117,2024-01-04,Store A,C044,Apple iPhone 15,Silver,128GB,grab
+117,2024-01-04,Store A,C044,Apple iPhone 15,Silver,128GB,purchase
+118,2024-01-04,Store A,C022,Sony Headphones,Black,Noise Cancelling,grab
+118,2024-01-04,Store A,C022,Sony Headphones,Black,Noise Cancelling,putback
+119,2024-01-04,Store A,C047,Sony Headphones,Black,Noise Cancelling,grab
+119,2024-01-04,Store A,C047,Sony Headphones,Black,Noise Cancelling,purchase
+120,2024-01-04,Store A,C027,Samsung S24 Ultra,Gray,256GB,grab
+120,2024-01-04,Store A,C027,Samsung S24 Ultra,Gray,256GB,putback
+120,2024-01-04,Store A,C027,Apple iPhone 15,Black,256GB,grab
+120,2024-01-04,Store A,C027,Apple iPhone 15,Black,256GB,putback
+120,2024-01-04,Store A,C027,Sony Headphones,Black,Noise Cancelling,grab
+120,2024-01-04,Store A,C027,Sony Headphones,Black,Noise Cancelling,putback
+121,2024-01-04,Store A,C050,Bose Speaker,White,Wireless,grab
+121,2024-01-04,Store A,C050,Bose Speaker,White,Wireless,purchase
+122,2024-01-04,Store A,C027,Apple iPhone 15,Black,128GB,grab
+122,2024-01-04,Store A,C027,Apple iPhone 15,Black,128GB,purchase
+123,2024-01-04,Store A,C052,Samsung S24 Ultra,Black,256GB,grab
+123,2024-01-04,Store A,C052,Samsung S24 Ultra,Black,256GB,purchase
+124,2024-01-04,Store A,C058,Bose Speaker,Blue,Wireless,grab
+124,2024-01-04,Store A,C058,Bose Speaker,Blue,Wireless,purchase
+124,2024-01-04,Store A,C058,Samsung S24 Ultra,Black,256GB,grab
+124,2024-01-04,Store A,C058,Samsung S24 Ultra,Black,256GB,putback
+125,2024-01-04,Store A,C037,Apple iPhone 15,Silver,256GB,grab
+125,2024-01-04,Store A,C037,Apple iPhone 15,Silver,256GB,purchase
+126,2024-01-04,Store A,C009,Sony Headphones,Black,Noise Cancelling,grab
+126,2024-01-04,Store A,C009,Sony Headphones,Black,Noise Cancelling,purchase
+127,2024-01-04,Store A,C035,Sony Headphones,Black,Noise Cancelling,grab
+127,2024-01-04,Store A,C035,Sony Headphones,Black,Noise Cancelling,putback
+128,2024-01-04,Store A,C022,Bose Speaker,Blue,Wireless,grab
+128,2024-01-04,Store A,C022,Bose Speaker,Blue,Wireless,purchase
+129,2024-01-04,Store A,C022,Apple iPhone 15,Silver,256GB,grab
+129,2024-01-04,Store A,C022,Sony Headphones,Black,Noise Cancelling,grab
+129,2024-01-04,Store A,C022,Sony Headphones,Black,Noise Cancelling,purchase
+130,2024-01-04,Store A,C008,Apple iPhone 15,Silver,256GB,grab
+130,2024-01-04,Store A,C008,Apple iPhone 15,Silver,256GB,purchase
+131,2024-01-04,Store A,C004,Bose Speaker,Blue,Wireless,grab
+131,2024-01-04,Store A,C004,Bose Speaker,Blue,Wireless,purchase
+131,2024-01-04,Store A,C004,Apple iPhone 15,Black,128GB,grab
+131,2024-01-04,Store A,C004,Apple iPhone 15,Black,128GB,putback
+132,2024-01-04,Store A,C033,Apple iPhone 15,Silver,128GB,grab
+132,2024-01-04,Store A,C033,Apple iPhone 15,Silver,128GB,putback
+132,2024-01-04,Store A,C033,Samsung S24 Ultra,Black,512GB,grab
+132,2024-01-04,Store A,C033,Samsung S24 Ultra,Black,512GB,purchase
+133,2024-01-04,Store A,C034,Sony Headphones,Black,Noise Cancelling,grab
+133,2024-01-04,Store A,C034,Sony Headphones,Black,Noise Cancelling,purchase
+134,2024-01-04,Store B,C056,Sony Headphones,Black,Noise Cancelling,grab
+134,2024-01-04,Store B,C056,Sony Headphones,Black,Noise Cancelling,purchase
+135,2024-01-04,Store B,C043,Samsung S24 Ultra,Gray,512GB,grab
+135,2024-01-04,Store B,C043,Samsung S24 Ultra,Gray,512GB,purchase
+136,2024-01-04,Store B,C031,Bose Speaker,White,Wireless,grab
+136,2024-01-04,Store B,C031,Bose Speaker,White,Wireless,purchase
+137,2024-01-04,Store B,C031,Bose Speaker,White,Wireless,grab
+137,2024-01-04,Store B,C031,Bose Speaker,White,Wireless,putback
+138,2024-01-04,Store B,C025,Apple iPhone 15,Black,128GB,grab
+138,2024-01-04,Store B,C025,Apple iPhone 15,Black,128GB,purchase
+139,2024-01-04,Store B,C058,Apple iPhone 15,Black,256GB,grab
+139,2024-01-04,Store B,C058,Apple iPhone 15,Black,256GB,purchase
+140,2024-01-04,Store B,C002,Samsung S24 Ultra,Black,512GB,grab
+140,2024-01-04,Store B,C002,Samsung S24 Ultra,Black,512GB,putback
+140,2024-01-04,Store B,C002,Sony Headphones,Black,Noise Cancelling,grab
+140,2024-01-04,Store B,C002,Sony Headphones,Black,Noise Cancelling,purchase
+141,2024-01-04,Store B,C029,Apple iPhone 15,Black,128GB,grab
+141,2024-01-04,Store B,C029,Apple iPhone 15,Black,128GB,purchase
+142,2024-01-04,Store B,C027,Apple iPhone 15,Silver,256GB,grab
+142,2024-01-04,Store B,C027,Apple iPhone 15,Silver,256GB,putback
+142,2024-01-04,Store B,C027,Bose Speaker,White,Wireless,grab
+142,2024-01-04,Store B,C027,Bose Speaker,White,Wireless,purchase
+142,2024-01-04,Store B,C027,Sony Headphones,Black,Noise Cancelling,grab
+142,2024-01-04,Store B,C027,Sony Headphones,Black,Noise Cancelling,putback
+143,2024-01-04,Store B,C019,Bose Speaker,Blue,Wireless,grab
+143,2024-01-04,Store B,C019,Bose Speaker,Blue,Wireless,putback
+144,2024-01-04,Store B,C007,Samsung S24 Ultra,Black,512GB,grab
+144,2024-01-04,Store B,C007,Samsung S24 Ultra,Black,512GB,purchase
+145,2024-01-04,Store C,C038,Bose Speaker,White,Wireless,grab
+146,2024-01-04,Store C,C006,Samsung S24 Ultra,Gray,512GB,grab
+146,2024-01-04,Store C,C006,Samsung S24 Ultra,Gray,512GB,purchase
+147,2024-01-04,Store C,C027,Sony Headphones,Black,Noise Cancelling,grab
+147,2024-01-04,Store C,C027,Sony Headphones,Black,Noise Cancelling,purchase
+148,2024-01-04,Store C,C010,Samsung S24 Ultra,Black,256GB,grab
+148,2024-01-04,Store C,C010,Samsung S24 Ultra,Black,256GB,putback
+148,2024-01-04,Store C,C010,Bose Speaker,White,Wireless,grab
+148,2024-01-04,Store C,C010,Bose Speaker,White,Wireless,purchase
+148,2024-01-04,Store C,C010,Sony Headphones,Black,Noise Cancelling,grab
+148,2024-01-04,Store C,C010,Sony Headphones,Black,Noise Cancelling,putback
+149,2024-01-04,Store C,C031,Bose Speaker,Blue,Wireless,grab
+149,2024-01-04,Store C,C031,Bose Speaker,Blue,Wireless,putback
+150,2024-01-04,Store C,C020,Bose Speaker,White,Wireless,grab
+150,2024-01-04,Store C,C020,Bose Speaker,White,Wireless,purchase
+151,2024-01-04,Store C,C008,Apple iPhone 15,Silver,256GB,grab
+151,2024-01-04,Store C,C008,Apple iPhone 15,Silver,256GB,purchase
+152,2024-01-04,Store C,C054,Apple iPhone 15,Black,256GB,grab
+152,2024-01-04,Store C,C054,Apple iPhone 15,Black,256GB,putback
+153,2024-01-04,Store C,C042,Apple iPhone 15,Black,256GB,grab
+153,2024-01-04,Store C,C042,Apple iPhone 15,Black,256GB,purchase
+153,2024-01-04,Store C,C042,Sony Headphones,Black,Noise Cancelling,grab
+153,2024-01-04,Store C,C042,Sony Headphones,Black,Noise Cancelling,putback
+154,2024-01-04,Store C,C030,Sony Headphones,Black,Noise Cancelling,grab
+154,2024-01-04,Store C,C030,Sony Headphones,Black,Noise Cancelling,purchase
+155,2024-01-04,Store C,C015,Bose Speaker,White,Wireless,grab
+155,2024-01-04,Store C,C015,Bose Speaker,White,Wireless,putback
+155,2024-01-04,Store C,C015,Sony Headphones,Black,Noise Cancelling,grab
+155,2024-01-04,Store C,C015,Sony Headphones,Black,Noise Cancelling,putback
+155,2024-01-04,Store C,C015,Apple iPhone 15,Silver,128GB,grab
+155,2024-01-04,Store C,C015,Apple iPhone 15,Silver,128GB,purchase
+156,2024-01-04,Store C,C000,Bose Speaker,White,Wireless,grab
+156,2024-01-04,Store C,C000,Bose Speaker,White,Wireless,putback
+156,2024-01-04,Store C,C000,Sony Headphones,Black,Noise Cancelling,grab
+156,2024-01-04,Store C,C000,Sony Headphones,Black,Noise Cancelling,purchase
+157,2024-01-04,Store C,C028,Apple iPhone 15,Silver,128GB,grab
+157,2024-01-04,Store C,C028,Apple iPhone 15,Silver,128GB,putback
+157,2024-01-04,Store C,C028,Bose Speaker,White,Wireless,grab
+157,2024-01-04,Store C,C028,Bose Speaker,White,Wireless,putback
+158,2024-01-05,Store A,C053,Sony Headphones,Black,Noise Cancelling,grab
+158,2024-01-05,Store A,C053,Sony Headphones,Black,Noise Cancelling,putback
+158,2024-01-05,Store A,C053,Samsung S24 Ultra,Gray,256GB,grab
+158,2024-01-05,Store A,C053,Samsung S24 Ultra,Gray,256GB,purchase
+158,2024-01-05,Store A,C053,Bose Speaker,White,Wireless,grab
+158,2024-01-05,Store A,C053,Bose Speaker,White,Wireless,putback
+159,2024-01-05,Store A,C005,Sony Headphones,Black,Noise Cancelling,grab
+159,2024-01-05,Store A,C005,Sony Headphones,Black,Noise Cancelling,putback
+160,2024-01-05,Store A,C009,Apple iPhone 15,Black,128GB,grab
+160,2024-01-05,Store A,C009,Apple iPhone 15,Black,128GB,purchase
+161,2024-01-05,Store A,C022,Apple iPhone 15,Black,128GB,grab
+161,2024-01-05,Store A,C022,Apple iPhone 15,Black,128GB,putback
+162,2024-01-05,Store A,C045,Bose Speaker,White,Wireless,grab
+162,2024-01-05,Store A,C045,Bose Speaker,White,Wireless,purchase
+163,2024-01-05,Store A,C015,Samsung S24 Ultra,Black,256GB,grab
+163,2024-01-05,Store A,C015,Samsung S24 Ultra,Black,256GB,putback
+163,2024-01-05,Store A,C015,Bose Speaker,White,Wireless,grab
+163,2024-01-05,Store A,C015,Bose Speaker,White,Wireless,putback
+163,2024-01-05,Store A,C015,Apple iPhone 15,Black,256GB,grab
+163,2024-01-05,Store A,C015,Apple iPhone 15,Black,256GB,purchase
+164,2024-01-05,Store A,C055,Samsung S24 Ultra,Gray,512GB,grab
+164,2024-01-05,Store A,C055,Samsung S24 Ultra,Gray,512GB,putback
+165,2024-01-05,Store A,C011,Apple iPhone 15,Black,128GB,grab
+165,2024-01-05,Store A,C011,Bose Speaker,White,Wireless,grab
+165,2024-01-05,Store A,C011,Bose Speaker,White,Wireless,putback
+166,2024-01-05,Store A,C025,Samsung S24 Ultra,Gray,512GB,grab
+166,2024-01-05,Store A,C025,Samsung S24 Ultra,Gray,512GB,purchase
+167,2024-01-05,Store A,C030,Samsung S24 Ultra,Black,256GB,grab
+167,2024-01-05,Store A,C030,Samsung S24 Ultra,Black,256GB,putback
+167,2024-01-05,Store A,C030,Bose Speaker,Blue,Wireless,grab
+167,2024-01-05,Store A,C030,Bose Speaker,Blue,Wireless,putback
+167,2024-01-05,Store A,C030,Apple iPhone 15,Silver,128GB,grab
+167,2024-01-05,Store A,C030,Apple iPhone 15,Silver,128GB,putback
+168,2024-01-05,Store A,C029,Samsung S24 Ultra,Gray,512GB,grab
+168,2024-01-05,Store A,C029,Samsung S24 Ultra,Gray,512GB,purchase
+169,2024-01-05,Store A,C002,Bose Speaker,Blue,Wireless,grab
+169,2024-01-05,Store A,C002,Bose Speaker,Blue,Wireless,putback
+170,2024-01-05,Store A,C017,Apple iPhone 15,Silver,128GB,grab
+170,2024-01-05,Store A,C017,Apple iPhone 15,Silver,128GB,purchase
+171,2024-01-05,Store A,C002,Bose Speaker,White,Wireless,grab
+172,2024-01-05,Store A,C042,Apple iPhone 15,Silver,256GB,grab
+172,2024-01-05,Store A,C042,Apple iPhone 15,Silver,256GB,putback
+173,2024-01-05,Store A,C031,Samsung S24 Ultra,Gray,512GB,grab
+173,2024-01-05,Store A,C031,Samsung S24 Ultra,Gray,512GB,putback
+174,2024-01-05,Store B,C005,Bose Speaker,White,Wireless,grab
+174,2024-01-05,Store B,C005,Bose Speaker,White,Wireless,purchase
+175,2024-01-05,Store B,C007,Sony Headphones,Black,Noise Cancelling,grab
+175,2024-01-05,Store B,C007,Sony Headphones,Black,Noise Cancelling,purchase
+176,2024-01-05,Store B,C051,Samsung S24 Ultra,Black,512GB,grab
+176,2024-01-05,Store B,C051,Samsung S24 Ultra,Black,512GB,purchase
+177,2024-01-05,Store B,C037,Bose Speaker,Blue,Wireless,grab
+177,2024-01-05,Store B,C037,Bose Speaker,Blue,Wireless,putback
+177,2024-01-05,Store B,C037,Apple iPhone 15,Black,128GB,grab
+177,2024-01-05,Store B,C037,Apple iPhone 15,Black,128GB,purchase
+178,2024-01-05,Store B,C055,Apple iPhone 15,Black,256GB,grab
+178,2024-01-05,Store B,C055,Apple iPhone 15,Black,256GB,purchase
+179,2024-01-05,Store B,C049,Bose Speaker,White,Wireless,grab
+179,2024-01-05,Store B,C049,Bose Speaker,White,Wireless,purchase
+180,2024-01-05,Store B,C010,Bose Speaker,Blue,Wireless,grab
+180,2024-01-05,Store B,C010,Bose Speaker,Blue,Wireless,purchase
+181,2024-01-05,Store B,C006,Sony Headphones,Black,Noise Cancelling,grab
+181,2024-01-05,Store B,C006,Sony Headphones,Black,Noise Cancelling,purchase
+182,2024-01-05,Store B,C058,Bose Speaker,Blue,Wireless,grab
+182,2024-01-05,Store B,C058,Bose Speaker,Blue,Wireless,putback
+182,2024-01-05,Store B,C058,Sony Headphones,Black,Noise Cancelling,grab
+182,2024-01-05,Store B,C058,Sony Headphones,Black,Noise Cancelling,putback
+182,2024-01-05,Store B,C058,Samsung S24 Ultra,Gray,512GB,grab
+182,2024-01-05,Store B,C058,Samsung S24 Ultra,Gray,512GB,putback
+183,2024-01-05,Store B,C021,Samsung S24 Ultra,Gray,256GB,grab
+183,2024-01-05,Store B,C021,Samsung S24 Ultra,Gray,256GB,purchase
+184,2024-01-05,Store B,C055,Bose Speaker,Blue,Wireless,grab
+184,2024-01-05,Store B,C055,Bose Speaker,Blue,Wireless,purchase
+184,2024-01-05,Store B,C055,Apple iPhone 15,Silver,128GB,grab
+184,2024-01-05,Store B,C055,Apple iPhone 15,Silver,128GB,putback
+185,2024-01-05,Store B,C048,Bose Speaker,White,Wireless,grab
+185,2024-01-05,Store B,C048,Bose Speaker,White,Wireless,purchase
+186,2024-01-05,Store B,C023,Samsung S24 Ultra,Black,512GB,grab
+186,2024-01-05,Store B,C023,Samsung S24 Ultra,Black,512GB,purchase
+187,2024-01-05,Store B,C015,Bose Speaker,Blue,Wireless,grab
+187,2024-01-05,Store B,C015,Bose Speaker,Blue,Wireless,purchase
+188,2024-01-05,Store B,C015,Bose Speaker,White,Wireless,grab
+188,2024-01-05,Store B,C015,Bose Speaker,White,Wireless,purchase
+189,2024-01-05,Store C,C043,Samsung S24 Ultra,Black,512GB,grab
+189,2024-01-05,Store C,C043,Samsung S24 Ultra,Black,512GB,purchase
+190,2024-01-05,Store C,C029,Sony Headphones,Black,Noise Cancelling,grab
+190,2024-01-05,Store C,C029,Sony Headphones,Black,Noise Cancelling,purchase
+191,2024-01-05,Store C,C058,Sony Headphones,Black,Noise Cancelling,grab
+191,2024-01-05,Store C,C058,Sony Headphones,Black,Noise Cancelling,purchase
+192,2024-01-05,Store C,C033,Apple iPhone 15,Black,256GB,grab
+192,2024-01-05,Store C,C033,Apple iPhone 15,Black,256GB,putback
+193,2024-01-05,Store C,C005,Samsung S24 Ultra,Black,512GB,grab
+194,2024-01-05,Store C,C017,Sony Headphones,Black,Noise Cancelling,grab
+194,2024-01-05,Store C,C017,Sony Headphones,Black,Noise Cancelling,purchase
+195,2024-01-05,Store C,C046,Samsung S24 Ultra,Black,512GB,grab
+195,2024-01-05,Store C,C046,Samsung S24 Ultra,Black,512GB,putback
+195,2024-01-05,Store C,C046,Bose Speaker,White,Wireless,grab
+195,2024-01-05,Store C,C046,Bose Speaker,White,Wireless,putback
+195,2024-01-05,Store C,C046,Apple iPhone 15,Black,256GB,grab
+195,2024-01-05,Store C,C046,Apple iPhone 15,Black,256GB,purchase
+196,2024-01-05,Store C,C001,Bose Speaker,White,Wireless,grab
+196,2024-01-05,Store C,C001,Bose Speaker,White,Wireless,putback
+197,2024-01-05,Store C,C049,Sony Headphones,Black,Noise Cancelling,grab
+197,2024-01-05,Store C,C049,Sony Headphones,Black,Noise Cancelling,putback
+197,2024-01-05,Store C,C049,Bose Speaker,White,Wireless,grab
+197,2024-01-05,Store C,C049,Bose Speaker,White,Wireless,putback
+197,2024-01-05,Store C,C049,Apple iPhone 15,Black,128GB,grab
+197,2024-01-05,Store C,C049,Apple iPhone 15,Black,128GB,purchase
+198,2024-01-05,Store C,C002,Sony Headphones,Black,Noise Cancelling,grab
+198,2024-01-05,Store C,C002,Sony Headphones,Black,Noise Cancelling,purchase
+199,2024-01-05,Store C,C051,Bose Speaker,Blue,Wireless,grab
+199,2024-01-05,Store C,C051,Bose Speaker,Blue,Wireless,putback
+199,2024-01-05,Store C,C051,Apple iPhone 15,Black,256GB,grab
+199,2024-01-05,Store C,C051,Apple iPhone 15,Black,256GB,purchase
+199,2024-01-05,Store C,C051,Samsung S24 Ultra,Gray,256GB,grab
+199,2024-01-05,Store C,C051,Samsung S24 Ultra,Gray,256GB,putback
+200,2024-01-05,Store C,C035,Samsung S24 Ultra,Black,512GB,grab
+200,2024-01-05,Store C,C035,Samsung S24 Ultra,Black,512GB,purchase
+201,2024-01-05,Store C,C001,Apple iPhone 15,Silver,256GB,grab
+201,2024-01-05,Store C,C001,Apple iPhone 15,Silver,256GB,putback
+201,2024-01-05,Store C,C001,Sony Headphones,Black,Noise Cancelling,grab
+201,2024-01-05,Store C,C001,Sony Headphones,Black,Noise Cancelling,purchase
+202,2024-01-05,Store C,C016,Samsung S24 Ultra,Gray,512GB,grab
+202,2024-01-05,Store C,C016,Samsung S24 Ultra,Gray,512GB,purchase
+203,2024-01-06,Store A,C053,Bose Speaker,White,Wireless,grab
+203,2024-01-06,Store A,C053,Bose Speaker,White,Wireless,purchase
+204,2024-01-06,Store A,C050,Sony Headphones,Black,Noise Cancelling,grab
+204,2024-01-06,Store A,C050,Sony Headphones,Black,Noise Cancelling,putback
+205,2024-01-06,Store A,C037,Apple iPhone 15,Silver,128GB,grab
+205,2024-01-06,Store A,C037,Apple iPhone 15,Silver,128GB,putback
+205,2024-01-06,Store A,C037,Sony Headphones,Black,Noise Cancelling,grab
+205,2024-01-06,Store A,C037,Sony Headphones,Black,Noise Cancelling,purchase
+206,2024-01-06,Store A,C020,Apple iPhone 15,Black,256GB,grab
+206,2024-01-06,Store A,C020,Apple iPhone 15,Black,256GB,purchase
+207,2024-01-06,Store A,C045,Bose Speaker,White,Wireless,grab
+207,2024-01-06,Store A,C045,Bose Speaker,White,Wireless,putback
+208,2024-01-06,Store A,C056,Samsung S24 Ultra,Black,256GB,grab
+208,2024-01-06,Store A,C056,Samsung S24 Ultra,Black,256GB,purchase
+209,2024-01-06,Store A,C056,Apple iPhone 15,Silver,256GB,grab
+209,2024-01-06,Store A,C056,Apple iPhone 15,Silver,256GB,purchase
+209,2024-01-06,Store A,C056,Samsung S24 Ultra,Black,256GB,grab
+209,2024-01-06,Store A,C056,Samsung S24 Ultra,Black,256GB,putback
+210,2024-01-06,Store A,C026,Samsung S24 Ultra,Gray,256GB,grab
+210,2024-01-06,Store A,C026,Samsung S24 Ultra,Gray,256GB,putback
+211,2024-01-06,Store A,C040,Apple iPhone 15,Silver,256GB,grab
+211,2024-01-06,Store A,C040,Apple iPhone 15,Silver,256GB,purchase
+211,2024-01-06,Store A,C040,Samsung S24 Ultra,Black,512GB,grab
+212,2024-01-06,Store A,C033,Apple iPhone 15,Silver,256GB,grab
+212,2024-01-06,Store A,C033,Apple iPhone 15,Silver,256GB,purchase
+212,2024-01-06,Store A,C033,Sony Headphones,Black,Noise Cancelling,grab
+212,2024-01-06,Store A,C033,Sony Headphones,Black,Noise Cancelling,putback
+213,2024-01-06,Store A,C025,Apple iPhone 15,Black,256GB,grab
+213,2024-01-06,Store A,C025,Apple iPhone 15,Black,256GB,putback
+213,2024-01-06,Store A,C025,Sony Headphones,Black,Noise Cancelling,grab
+213,2024-01-06,Store A,C025,Sony Headphones,Black,Noise Cancelling,putback
+214,2024-01-06,Store A,C018,Samsung S24 Ultra,Gray,256GB,grab
+214,2024-01-06,Store A,C018,Samsung S24 Ultra,Gray,256GB,purchase
+215,2024-01-06,Store B,C001,Bose Speaker,White,Wireless,grab
+215,2024-01-06,Store B,C001,Bose Speaker,White,Wireless,purchase
+216,2024-01-06,Store B,C005,Samsung S24 Ultra,Gray,256GB,grab
+216,2024-01-06,Store B,C005,Samsung S24 Ultra,Gray,256GB,purchase
+217,2024-01-06,Store B,C036,Bose Speaker,Blue,Wireless,grab
+217,2024-01-06,Store B,C036,Bose Speaker,Blue,Wireless,purchase
+218,2024-01-06,Store B,C048,Apple iPhone 15,Silver,256GB,grab
+218,2024-01-06,Store B,C048,Apple iPhone 15,Silver,256GB,purchase
+219,2024-01-06,Store B,C036,Sony Headphones,Black,Noise Cancelling,grab
+219,2024-01-06,Store B,C036,Sony Headphones,Black,Noise Cancelling,purchase
+220,2024-01-06,Store B,C037,Sony Headphones,Black,Noise Cancelling,grab
+221,2024-01-06,Store B,C054,Sony Headphones,Black,Noise Cancelling,grab
+221,2024-01-06,Store B,C054,Sony Headphones,Black,Noise Cancelling,purchase
+222,2024-01-06,Store B,C040,Sony Headphones,Black,Noise Cancelling,grab
+222,2024-01-06,Store B,C040,Sony Headphones,Black,Noise Cancelling,purchase
+223,2024-01-06,Store B,C035,Apple iPhone 15,Silver,256GB,grab
+223,2024-01-06,Store B,C035,Apple iPhone 15,Silver,256GB,putback
+223,2024-01-06,Store B,C035,Samsung S24 Ultra,Black,512GB,grab
+223,2024-01-06,Store B,C035,Samsung S24 Ultra,Black,512GB,putback
+223,2024-01-06,Store B,C035,Bose Speaker,White,Wireless,grab
+223,2024-01-06,Store B,C035,Bose Speaker,White,Wireless,purchase
+224,2024-01-06,Store B,C025,Samsung S24 Ultra,Black,256GB,grab
+224,2024-01-06,Store B,C025,Samsung S24 Ultra,Black,256GB,putback
+224,2024-01-06,Store B,C025,Apple iPhone 15,Black,128GB,grab
+224,2024-01-06,Store B,C025,Apple iPhone 15,Black,128GB,purchase
+225,2024-01-06,Store B,C053,Sony Headphones,Black,Noise Cancelling,grab
+225,2024-01-06,Store B,C053,Sony Headphones,Black,Noise Cancelling,putback
+225,2024-01-06,Store B,C053,Samsung S24 Ultra,Black,512GB,grab
+225,2024-01-06,Store B,C053,Samsung S24 Ultra,Black,512GB,purchase
+225,2024-01-06,Store B,C053,Bose Speaker,White,Wireless,grab
+225,2024-01-06,Store B,C053,Bose Speaker,White,Wireless,putback
+226,2024-01-06,Store B,C032,Apple iPhone 15,Black,256GB,grab
+226,2024-01-06,Store B,C032,Apple iPhone 15,Black,256GB,putback
+226,2024-01-06,Store B,C032,Sony Headphones,Black,Noise Cancelling,grab
+226,2024-01-06,Store B,C032,Sony Headphones,Black,Noise Cancelling,putback
+227,2024-01-06,Store C,C048,Sony Headphones,Black,Noise Cancelling,grab
+227,2024-01-06,Store C,C048,Sony Headphones,Black,Noise Cancelling,purchase
+228,2024-01-06,Store C,C008,Apple iPhone 15,Black,256GB,grab
+228,2024-01-06,Store C,C008,Apple iPhone 15,Black,256GB,purchase
+228,2024-01-06,Store C,C008,Sony Headphones,Black,Noise Cancelling,grab
+229,2024-01-06,Store C,C021,Samsung S24 Ultra,Black,256GB,grab
+229,2024-01-06,Store C,C021,Samsung S24 Ultra,Black,256GB,purchase
+230,2024-01-06,Store C,C059,Samsung S24 Ultra,Gray,256GB,grab
+230,2024-01-06,Store C,C059,Samsung S24 Ultra,Gray,256GB,purchase
+231,2024-01-06,Store C,C054,Samsung S24 Ultra,Black,256GB,grab
+231,2024-01-06,Store C,C054,Samsung S24 Ultra,Black,256GB,purchase
+232,2024-01-06,Store C,C033,Sony Headphones,Black,Noise Cancelling,grab
+232,2024-01-06,Store C,C033,Sony Headphones,Black,Noise Cancelling,purchase
+232,2024-01-06,Store C,C033,Bose Speaker,Blue,Wireless,grab
+232,2024-01-06,Store C,C033,Bose Speaker,Blue,Wireless,putback
+233,2024-01-06,Store C,C056,Bose Speaker,Blue,Wireless,grab
+233,2024-01-06,Store C,C056,Bose Speaker,Blue,Wireless,purchase
+234,2024-01-06,Store C,C002,Samsung S24 Ultra,Black,256GB,grab
+234,2024-01-06,Store C,C002,Samsung S24 Ultra,Black,256GB,putback
+234,2024-01-06,Store C,C002,Sony Headphones,Black,Noise Cancelling,grab
+234,2024-01-06,Store C,C002,Sony Headphones,Black,Noise Cancelling,putback
+234,2024-01-06,Store C,C002,Bose Speaker,Blue,Wireless,grab
+234,2024-01-06,Store C,C002,Bose Speaker,Blue,Wireless,purchase
+235,2024-01-06,Store C,C027,Bose Speaker,Blue,Wireless,grab
+235,2024-01-06,Store C,C027,Bose Speaker,Blue,Wireless,purchase
+236,2024-01-06,Store C,C057,Apple iPhone 15,Silver,256GB,grab
+236,2024-01-06,Store C,C057,Apple iPhone 15,Silver,256GB,purchase
+237,2024-01-06,Store C,C026,Apple iPhone 15,Silver,128GB,grab
+237,2024-01-06,Store C,C026,Apple iPhone 15,Silver,128GB,purchase
+238,2024-01-06,Store C,C029,Sony Headphones,Black,Noise Cancelling,grab
+238,2024-01-06,Store C,C029,Sony Headphones,Black,Noise Cancelling,putback
+238,2024-01-06,Store C,C029,Samsung S24 Ultra,Gray,256GB,grab
+238,2024-01-06,Store C,C029,Samsung S24 Ultra,Gray,256GB,purchase
+239,2024-01-06,Store C,C001,Samsung S24 Ultra,Gray,256GB,grab
+239,2024-01-06,Store C,C001,Samsung S24 Ultra,Gray,256GB,purchase
+240,2024-01-06,Store C,C026,Bose Speaker,White,Wireless,grab
+240,2024-01-06,Store C,C026,Bose Speaker,White,Wireless,purchase
+241,2024-01-06,Store C,C016,Bose Speaker,Blue,Wireless,grab
+241,2024-01-06,Store C,C016,Bose Speaker,Blue,Wireless,purchase
+241,2024-01-06,Store C,C016,Apple iPhone 15,Silver,256GB,grab
+241,2024-01-06,Store C,C016,Apple iPhone 15,Silver,256GB,putback
+242,2024-01-06,Store C,C030,Samsung S24 Ultra,Gray,256GB,grab
+242,2024-01-06,Store C,C030,Samsung S24 Ultra,Gray,256GB,purchase
+243,2024-01-06,Store C,C006,Bose Speaker,Blue,Wireless,grab
+243,2024-01-06,Store C,C006,Bose Speaker,Blue,Wireless,purchase
+244,2024-01-07,Store A,C019,Apple iPhone 15,Black,128GB,grab
+244,2024-01-07,Store A,C019,Apple iPhone 15,Black,128GB,purchase
+245,2024-01-07,Store A,C005,Samsung S24 Ultra,Black,256GB,grab
+245,2024-01-07,Store A,C005,Samsung S24 Ultra,Black,256GB,putback
+245,2024-01-07,Store A,C005,Apple iPhone 15,Black,256GB,grab
+245,2024-01-07,Store A,C005,Apple iPhone 15,Black,256GB,putback
+246,2024-01-07,Store A,C047,Apple iPhone 15,Black,128GB,grab
+246,2024-01-07,Store A,C047,Apple iPhone 15,Black,128GB,purchase
+247,2024-01-07,Store A,C057,Sony Headphones,Black,Noise Cancelling,grab
+247,2024-01-07,Store A,C057,Sony Headphones,Black,Noise Cancelling,putback
+247,2024-01-07,Store A,C057,Apple iPhone 15,Silver,256GB,grab
+247,2024-01-07,Store A,C057,Apple iPhone 15,Silver,256GB,purchase
+248,2024-01-07,Store A,C057,Samsung S24 Ultra,Gray,256GB,grab
+248,2024-01-07,Store A,C057,Samsung S24 Ultra,Gray,256GB,putback
+248,2024-01-07,Store A,C057,Apple iPhone 15,Black,256GB,grab
+248,2024-01-07,Store A,C057,Apple iPhone 15,Black,256GB,purchase
+248,2024-01-07,Store A,C057,Bose Speaker,White,Wireless,grab
+248,2024-01-07,Store A,C057,Bose Speaker,White,Wireless,putback
+249,2024-01-07,Store A,C014,Bose Speaker,Blue,Wireless,grab
+249,2024-01-07,Store A,C014,Bose Speaker,Blue,Wireless,putback
+249,2024-01-07,Store A,C014,Samsung S24 Ultra,Black,512GB,grab
+249,2024-01-07,Store A,C014,Samsung S24 Ultra,Black,512GB,purchase
+250,2024-01-07,Store A,C030,Bose Speaker,White,Wireless,grab
+250,2024-01-07,Store A,C030,Bose Speaker,White,Wireless,putback
+251,2024-01-07,Store A,C020,Apple iPhone 15,Silver,256GB,grab
+251,2024-01-07,Store A,C020,Apple iPhone 15,Silver,256GB,putback
+252,2024-01-07,Store A,C004,Sony Headphones,Black,Noise Cancelling,grab
+252,2024-01-07,Store A,C004,Sony Headphones,Black,Noise Cancelling,putback
+252,2024-01-07,Store A,C004,Apple iPhone 15,Black,128GB,grab
+252,2024-01-07,Store A,C004,Apple iPhone 15,Black,128GB,purchase
+253,2024-01-07,Store A,C036,Apple iPhone 15,Silver,256GB,grab
+253,2024-01-07,Store A,C036,Apple iPhone 15,Silver,256GB,purchase
+254,2024-01-07,Store B,C036,Samsung S24 Ultra,Black,256GB,grab
+254,2024-01-07,Store B,C036,Samsung S24 Ultra,Black,256GB,purchase
+254,2024-01-07,Store B,C036,Apple iPhone 15,Black,128GB,grab
+254,2024-01-07,Store B,C036,Apple iPhone 15,Black,128GB,putback
+254,2024-01-07,Store B,C036,Bose Speaker,Blue,Wireless,grab
+254,2024-01-07,Store B,C036,Bose Speaker,Blue,Wireless,putback
+255,2024-01-07,Store B,C014,Sony Headphones,Black,Noise Cancelling,grab
+255,2024-01-07,Store B,C014,Sony Headphones,Black,Noise Cancelling,purchase
+256,2024-01-07,Store B,C057,Sony Headphones,Black,Noise Cancelling,grab
+256,2024-01-07,Store B,C057,Sony Headphones,Black,Noise Cancelling,putback
+257,2024-01-07,Store B,C059,Sony Headphones,Black,Noise Cancelling,grab
+257,2024-01-07,Store B,C059,Sony Headphones,Black,Noise Cancelling,putback
+257,2024-01-07,Store B,C059,Samsung S24 Ultra,Black,512GB,grab
+257,2024-01-07,Store B,C059,Samsung S24 Ultra,Black,512GB,putback
+257,2024-01-07,Store B,C059,Apple iPhone 15,Black,128GB,grab
+257,2024-01-07,Store B,C059,Apple iPhone 15,Black,128GB,putback
+258,2024-01-07,Store B,C051,Apple iPhone 15,Black,128GB,grab
+259,2024-01-07,Store B,C019,Samsung S24 Ultra,Gray,512GB,grab
+259,2024-01-07,Store B,C019,Samsung S24 Ultra,Gray,512GB,purchase
+260,2024-01-07,Store B,C043,Samsung S24 Ultra,Gray,512GB,grab
+260,2024-01-07,Store B,C043,Samsung S24 Ultra,Gray,512GB,purchase
+260,2024-01-07,Store B,C043,Bose Speaker,Blue,Wireless,grab
+260,2024-01-07,Store B,C043,Bose Speaker,Blue,Wireless,putback
+260,2024-01-07,Store B,C043,Sony Headphones,Black,Noise Cancelling,grab
+260,2024-01-07,Store B,C043,Sony Headphones,Black,Noise Cancelling,putback
+261,2024-01-07,Store B,C033,Samsung S24 Ultra,Black,512GB,grab
+261,2024-01-07,Store B,C033,Samsung S24 Ultra,Black,512GB,purchase
+262,2024-01-07,Store B,C053,Apple iPhone 15,Silver,128GB,grab
+262,2024-01-07,Store B,C053,Apple iPhone 15,Silver,128GB,purchase
+263,2024-01-07,Store B,C027,Apple iPhone 15,Silver,128GB,grab
+263,2024-01-07,Store B,C027,Apple iPhone 15,Silver,128GB,purchase
+264,2024-01-07,Store B,C034,Apple iPhone 15,Black,256GB,grab
+264,2024-01-07,Store B,C034,Apple iPhone 15,Black,256GB,purchase
+265,2024-01-07,Store B,C024,Apple iPhone 15,Black,128GB,grab
+265,2024-01-07,Store B,C024,Apple iPhone 15,Black,128GB,purchase
+266,2024-01-07,Store B,C029,Sony Headphones,Black,Noise Cancelling,grab
+266,2024-01-07,Store B,C029,Sony Headphones,Black,Noise Cancelling,putback
+266,2024-01-07,Store B,C029,Samsung S24 Ultra,Black,256GB,grab
+266,2024-01-07,Store B,C029,Samsung S24 Ultra,Black,256GB,purchase
+267,2024-01-07,Store C,C013,Samsung S24 Ultra,Black,512GB,grab
+267,2024-01-07,Store C,C013,Samsung S24 Ultra,Black,512GB,purchase
+267,2024-01-07,Store C,C013,Apple iPhone 15,Black,256GB,grab
+267,2024-01-07,Store C,C013,Apple iPhone 15,Black,256GB,putback
+268,2024-01-07,Store C,C008,Samsung S24 Ultra,Gray,512GB,grab
+268,2024-01-07,Store C,C008,Samsung S24 Ultra,Gray,512GB,putback
+268,2024-01-07,Store C,C008,Bose Speaker,Blue,Wireless,grab
+268,2024-01-07,Store C,C008,Bose Speaker,Blue,Wireless,purchase
+269,2024-01-07,Store C,C003,Samsung S24 Ultra,Black,256GB,grab
+269,2024-01-07,Store C,C003,Samsung S24 Ultra,Black,256GB,purchase
+270,2024-01-07,Store C,C042,Samsung S24 Ultra,Black,512GB,grab
+270,2024-01-07,Store C,C042,Samsung S24 Ultra,Black,512GB,purchase
+270,2024-01-07,Store C,C042,Sony Headphones,Black,Noise Cancelling,grab
+270,2024-01-07,Store C,C042,Sony Headphones,Black,Noise Cancelling,putback
+270,2024-01-07,Store C,C042,Apple iPhone 15,Silver,128GB,grab
+270,2024-01-07,Store C,C042,Apple iPhone 15,Silver,128GB,putback
+271,2024-01-07,Store C,C042,Apple iPhone 15,Silver,128GB,grab
+271,2024-01-07,Store C,C042,Apple iPhone 15,Silver,128GB,putback
+271,2024-01-07,Store C,C042,Samsung S24 Ultra,Gray,512GB,grab
+271,2024-01-07,Store C,C042,Samsung S24 Ultra,Gray,512GB,putback
+271,2024-01-07,Store C,C042,Sony Headphones,Black,Noise Cancelling,grab
+271,2024-01-07,Store C,C042,Sony Headphones,Black,Noise Cancelling,purchase
+272,2024-01-07,Store C,C053,Samsung S24 Ultra,Gray,256GB,grab
+272,2024-01-07,Store C,C053,Samsung S24 Ultra,Gray,256GB,purchase
+273,2024-01-07,Store C,C026,Samsung S24 Ultra,Black,256GB,grab
+273,2024-01-07,Store C,C026,Samsung S24 Ultra,Black,256GB,putback
+274,2024-01-07,Store C,C044,Samsung S24 Ultra,Gray,256GB,grab
+274,2024-01-07,Store C,C044,Samsung S24 Ultra,Gray,256GB,purchase
+275,2024-01-07,Store C,C019,Apple iPhone 15,Black,128GB,grab
+275,2024-01-07,Store C,C019,Apple iPhone 15,Black,128GB,putback
+276,2024-01-07,Store C,C026,Sony Headphones,Black,Noise Cancelling,grab
+276,2024-01-07,Store C,C026,Sony Headphones,Black,Noise Cancelling,putback
+277,2024-01-08,Store A,C009,Samsung S24 Ultra,Gray,512GB,grab
+277,2024-01-08,Store A,C009,Samsung S24 Ultra,Gray,512GB,purchase
+277,2024-01-08,Store A,C009,Apple iPhone 15,Black,128GB,grab
+277,2024-01-08,Store A,C009,Apple iPhone 15,Black,128GB,putback
+277,2024-01-08,Store A,C009,Bose Speaker,White,Wireless,grab
+277,2024-01-08,Store A,C009,Bose Speaker,White,Wireless,putback
+278,2024-01-08,Store A,C032,Sony Headphones,Black,Noise Cancelling,grab
+278,2024-01-08,Store A,C032,Sony Headphones,Black,Noise Cancelling,putback
+278,2024-01-08,Store A,C032,Apple iPhone 15,Silver,256GB,grab
+278,2024-01-08,Store A,C032,Apple iPhone 15,Silver,256GB,purchase
+279,2024-01-08,Store A,C009,Samsung S24 Ultra,Black,256GB,grab
+279,2024-01-08,Store A,C009,Samsung S24 Ultra,Black,256GB,purchase
+280,2024-01-08,Store A,C046,Apple iPhone 15,Black,128GB,grab
+280,2024-01-08,Store A,C046,Apple iPhone 15,Black,128GB,purchase
+281,2024-01-08,Store A,C022,Samsung S24 Ultra,Black,256GB,grab
+281,2024-01-08,Store A,C022,Samsung S24 Ultra,Black,256GB,purchase
+282,2024-01-08,Store A,C018,Sony Headphones,Black,Noise Cancelling,grab
+282,2024-01-08,Store A,C018,Sony Headphones,Black,Noise Cancelling,purchase
+283,2024-01-08,Store A,C057,Sony Headphones,Black,Noise Cancelling,grab
+283,2024-01-08,Store A,C057,Sony Headphones,Black,Noise Cancelling,purchase
+284,2024-01-08,Store A,C003,Bose Speaker,Blue,Wireless,grab
+284,2024-01-08,Store A,C003,Bose Speaker,Blue,Wireless,putback
+285,2024-01-08,Store A,C043,Samsung S24 Ultra,Black,512GB,grab
+285,2024-01-08,Store A,C043,Samsung S24 Ultra,Black,512GB,purchase
+286,2024-01-08,Store A,C059,Apple iPhone 15,Black,256GB,grab
+286,2024-01-08,Store A,C059,Apple iPhone 15,Black,256GB,purchase
+287,2024-01-08,Store A,C046,Sony Headphones,Black,Noise Cancelling,grab
+287,2024-01-08,Store A,C046,Sony Headphones,Black,Noise Cancelling,purchase
+287,2024-01-08,Store A,C046,Bose Speaker,White,Wireless,grab
+287,2024-01-08,Store A,C046,Bose Speaker,White,Wireless,putback
+288,2024-01-08,Store B,C044,Samsung S24 Ultra,Black,512GB,grab
+288,2024-01-08,Store B,C044,Samsung S24 Ultra,Black,512GB,putback
+288,2024-01-08,Store B,C044,Apple iPhone 15,Silver,128GB,grab
+288,2024-01-08,Store B,C044,Apple iPhone 15,Silver,128GB,putback
+289,2024-01-08,Store B,C029,Bose Speaker,Blue,Wireless,grab
+289,2024-01-08,Store B,C029,Bose Speaker,Blue,Wireless,putback
+289,2024-01-08,Store B,C029,Apple iPhone 15,Black,128GB,grab
+289,2024-01-08,Store B,C029,Apple iPhone 15,Black,128GB,purchase
+290,2024-01-08,Store B,C047,Samsung S24 Ultra,Black,256GB,grab
+290,2024-01-08,Store B,C047,Samsung S24 Ultra,Black,256GB,purchase
+291,2024-01-08,Store B,C021,Apple iPhone 15,Black,128GB,grab
+291,2024-01-08,Store B,C021,Apple iPhone 15,Black,128GB,purchase
+292,2024-01-08,Store B,C014,Apple iPhone 15,Silver,128GB,grab
+292,2024-01-08,Store B,C014,Apple iPhone 15,Silver,128GB,purchase
+292,2024-01-08,Store B,C014,Samsung S24 Ultra,Gray,256GB,grab
+292,2024-01-08,Store B,C014,Samsung S24 Ultra,Gray,256GB,putback
+293,2024-01-08,Store B,C003,Bose Speaker,Blue,Wireless,grab
+293,2024-01-08,Store B,C003,Bose Speaker,Blue,Wireless,purchase
+294,2024-01-08,Store B,C042,Samsung S24 Ultra,Black,256GB,grab
+294,2024-01-08,Store B,C042,Samsung S24 Ultra,Black,256GB,purchase
+295,2024-01-08,Store B,C055,Apple iPhone 15,Silver,128GB,grab
+295,2024-01-08,Store B,C055,Apple iPhone 15,Silver,128GB,putback
+296,2024-01-08,Store B,C024,Sony Headphones,Black,Noise Cancelling,grab
+296,2024-01-08,Store B,C024,Sony Headphones,Black,Noise Cancelling,purchase
+297,2024-01-08,Store B,C041,Bose Speaker,Blue,Wireless,grab
+297,2024-01-08,Store B,C041,Bose Speaker,Blue,Wireless,purchase
+298,2024-01-08,Store C,C051,Apple iPhone 15,Black,128GB,grab
+298,2024-01-08,Store C,C051,Apple iPhone 15,Black,128GB,purchase
+298,2024-01-08,Store C,C051,Sony Headphones,Black,Noise Cancelling,grab
+298,2024-01-08,Store C,C051,Sony Headphones,Black,Noise Cancelling,putback
+299,2024-01-08,Store C,C048,Samsung S24 Ultra,Gray,256GB,grab
+299,2024-01-08,Store C,C048,Samsung S24 Ultra,Gray,256GB,purchase
+299,2024-01-08,Store C,C048,Apple iPhone 15,Silver,256GB,grab
+299,2024-01-08,Store C,C048,Apple iPhone 15,Silver,256GB,putback
+299,2024-01-08,Store C,C048,Sony Headphones,Black,Noise Cancelling,grab
+299,2024-01-08,Store C,C048,Sony Headphones,Black,Noise Cancelling,putback
+300,2024-01-08,Store C,C014,Sony Headphones,Black,Noise Cancelling,grab
+300,2024-01-08,Store C,C014,Sony Headphones,Black,Noise Cancelling,putback
+300,2024-01-08,Store C,C014,Apple iPhone 15,Black,128GB,grab
+300,2024-01-08,Store C,C014,Apple iPhone 15,Black,128GB,putback
+300,2024-01-08,Store C,C014,Bose Speaker,White,Wireless,grab
+300,2024-01-08,Store C,C014,Bose Speaker,White,Wireless,putback
+301,2024-01-08,Store C,C051,Bose Speaker,White,Wireless,grab
+301,2024-01-08,Store C,C051,Bose Speaker,White,Wireless,putback
+302,2024-01-08,Store C,C014,Sony Headphones,Black,Noise Cancelling,grab
+302,2024-01-08,Store C,C014,Sony Headphones,Black,Noise Cancelling,putback
+302,2024-01-08,Store C,C014,Apple iPhone 15,Silver,128GB,grab
+302,2024-01-08,Store C,C014,Apple iPhone 15,Silver,128GB,purchase
+303,2024-01-08,Store C,C012,Samsung S24 Ultra,Black,512GB,grab
+303,2024-01-08,Store C,C012,Samsung S24 Ultra,Black,512GB,purchase
+304,2024-01-08,Store C,C045,Sony Headphones,Black,Noise Cancelling,grab
+304,2024-01-08,Store C,C045,Sony Headphones,Black,Noise Cancelling,putback
+304,2024-01-08,Store C,C045,Apple iPhone 15,Silver,128GB,grab
+304,2024-01-08,Store C,C045,Apple iPhone 15,Silver,128GB,purchase
+305,2024-01-08,Store C,C034,Apple iPhone 15,Silver,256GB,grab
+305,2024-01-08,Store C,C034,Apple iPhone 15,Silver,256GB,purchase
+306,2024-01-08,Store C,C024,Sony Headphones,Black,Noise Cancelling,grab
+306,2024-01-08,Store C,C024,Sony Headphones,Black,Noise Cancelling,putback
+307,2024-01-08,Store C,C053,Sony Headphones,Black,Noise Cancelling,grab
+307,2024-01-08,Store C,C053,Sony Headphones,Black,Noise Cancelling,purchase
+307,2024-01-08,Store C,C053,Samsung S24 Ultra,Black,512GB,grab
+307,2024-01-08,Store C,C053,Samsung S24 Ultra,Black,512GB,putback
+308,2024-01-08,Store C,C059,Sony Headphones,Black,Noise Cancelling,grab
+308,2024-01-08,Store C,C059,Sony Headphones,Black,Noise Cancelling,purchase
+309,2024-01-08,Store C,C042,Apple iPhone 15,Silver,256GB,grab
+309,2024-01-08,Store C,C042,Apple iPhone 15,Silver,256GB,putback
+309,2024-01-08,Store C,C042,Samsung S24 Ultra,Gray,256GB,grab
+309,2024-01-08,Store C,C042,Samsung S24 Ultra,Gray,256GB,putback
+310,2024-01-08,Store C,C017,Sony Headphones,Black,Noise Cancelling,grab
+310,2024-01-08,Store C,C017,Sony Headphones,Black,Noise Cancelling,purchase
+311,2024-01-08,Store C,C028,Sony Headphones,Black,Noise Cancelling,grab
+311,2024-01-08,Store C,C028,Sony Headphones,Black,Noise Cancelling,purchase
+311,2024-01-08,Store C,C028,Bose Speaker,White,Wireless,grab
+311,2024-01-08,Store C,C028,Bose Speaker,White,Wireless,putback
+312,2024-01-09,Store A,C004,Apple iPhone 15,Black,256GB,grab
+312,2024-01-09,Store A,C004,Apple iPhone 15,Black,256GB,purchase
+313,2024-01-09,Store A,C038,Samsung S24 Ultra,Gray,256GB,grab
+313,2024-01-09,Store A,C038,Samsung S24 Ultra,Gray,256GB,putback
+314,2024-01-09,Store A,C036,Sony Headphones,Black,Noise Cancelling,grab
+314,2024-01-09,Store A,C036,Sony Headphones,Black,Noise Cancelling,putback
+314,2024-01-09,Store A,C036,Apple iPhone 15,Silver,128GB,grab
+314,2024-01-09,Store A,C036,Apple iPhone 15,Silver,128GB,putback
+315,2024-01-09,Store A,C019,Bose Speaker,Blue,Wireless,grab
+315,2024-01-09,Store A,C019,Bose Speaker,Blue,Wireless,putback
+315,2024-01-09,Store A,C019,Samsung S24 Ultra,Black,256GB,grab
+315,2024-01-09,Store A,C019,Samsung S24 Ultra,Black,256GB,putback
+316,2024-01-09,Store A,C011,Apple iPhone 15,Silver,128GB,grab
+316,2024-01-09,Store A,C011,Apple iPhone 15,Silver,128GB,purchase
+317,2024-01-09,Store A,C041,Sony Headphones,Black,Noise Cancelling,grab
+317,2024-01-09,Store A,C041,Sony Headphones,Black,Noise Cancelling,putback
+318,2024-01-09,Store A,C033,Samsung S24 Ultra,Black,256GB,grab
+318,2024-01-09,Store A,C033,Samsung S24 Ultra,Black,256GB,purchase
+319,2024-01-09,Store A,C055,Apple iPhone 15,Black,256GB,grab
+319,2024-01-09,Store A,C055,Apple iPhone 15,Black,256GB,putback
+319,2024-01-09,Store A,C055,Bose Speaker,White,Wireless,grab
+319,2024-01-09,Store A,C055,Bose Speaker,White,Wireless,purchase
+320,2024-01-09,Store A,C045,Apple iPhone 15,Silver,128GB,grab
+320,2024-01-09,Store A,C045,Apple iPhone 15,Silver,128GB,purchase
+321,2024-01-09,Store A,C026,Bose Speaker,White,Wireless,grab
+321,2024-01-09,Store A,C026,Bose Speaker,White,Wireless,purchase
+322,2024-01-09,Store A,C048,Sony Headphones,Black,Noise Cancelling,grab
+322,2024-01-09,Store A,C048,Sony Headphones,Black,Noise Cancelling,purchase
+323,2024-01-09,Store B,C017,Bose Speaker,Blue,Wireless,grab
+323,2024-01-09,Store B,C017,Bose Speaker,Blue,Wireless,putback
+323,2024-01-09,Store B,C017,Apple iPhone 15,Silver,128GB,grab
+323,2024-01-09,Store B,C017,Apple iPhone 15,Silver,128GB,purchase
+324,2024-01-09,Store B,C016,Apple iPhone 15,Silver,128GB,grab
+324,2024-01-09,Store B,C016,Apple iPhone 15,Silver,128GB,purchase
+324,2024-01-09,Store B,C016,Sony Headphones,Black,Noise Cancelling,grab
+324,2024-01-09,Store B,C016,Sony Headphones,Black,Noise Cancelling,putback
+325,2024-01-09,Store B,C046,Apple iPhone 15,Silver,256GB,grab
+325,2024-01-09,Store B,C046,Apple iPhone 15,Silver,256GB,purchase
+326,2024-01-09,Store B,C036,Apple iPhone 15,Silver,256GB,grab
+326,2024-01-09,Store B,C036,Apple iPhone 15,Silver,256GB,purchase
+327,2024-01-09,Store B,C032,Bose Speaker,Blue,Wireless,grab
+327,2024-01-09,Store B,C032,Bose Speaker,Blue,Wireless,purchase
+328,2024-01-09,Store B,C035,Apple iPhone 15,Black,128GB,grab
+328,2024-01-09,Store B,C035,Apple iPhone 15,Black,128GB,purchase
+329,2024-01-09,Store B,C048,Samsung S24 Ultra,Gray,256GB,grab
+329,2024-01-09,Store B,C048,Samsung S24 Ultra,Gray,256GB,putback
+329,2024-01-09,Store B,C048,Sony Headphones,Black,Noise Cancelling,grab
+329,2024-01-09,Store B,C048,Sony Headphones,Black,Noise Cancelling,putback
+330,2024-01-09,Store B,C047,Apple iPhone 15,Black,256GB,grab
+330,2024-01-09,Store B,C047,Apple iPhone 15,Black,256GB,purchase
+331,2024-01-09,Store B,C021,Sony Headphones,Black,Noise Cancelling,grab
+331,2024-01-09,Store B,C021,Sony Headphones,Black,Noise Cancelling,purchase
+331,2024-01-09,Store B,C021,Apple iPhone 15,Black,128GB,grab
+331,2024-01-09,Store B,C021,Apple iPhone 15,Black,128GB,putback
+332,2024-01-09,Store B,C014,Bose Speaker,White,Wireless,grab
+332,2024-01-09,Store B,C014,Bose Speaker,White,Wireless,purchase
+333,2024-01-09,Store B,C029,Sony Headphones,Black,Noise Cancelling,grab
+333,2024-01-09,Store B,C029,Sony Headphones,Black,Noise Cancelling,putback
+333,2024-01-09,Store B,C029,Apple iPhone 15,Silver,256GB,grab
+333,2024-01-09,Store B,C029,Samsung S24 Ultra,Gray,512GB,grab
+333,2024-01-09,Store B,C029,Samsung S24 Ultra,Gray,512GB,purchase
+334,2024-01-09,Store B,C025,Sony Headphones,Black,Noise Cancelling,grab
+334,2024-01-09,Store B,C025,Sony Headphones,Black,Noise Cancelling,putback
+334,2024-01-09,Store B,C025,Samsung S24 Ultra,Gray,512GB,grab
+334,2024-01-09,Store B,C025,Samsung S24 Ultra,Gray,512GB,purchase
+335,2024-01-09,Store C,C031,Apple iPhone 15,Silver,128GB,grab
+335,2024-01-09,Store C,C031,Apple iPhone 15,Silver,128GB,putback
+335,2024-01-09,Store C,C031,Samsung S24 Ultra,Black,256GB,grab
+335,2024-01-09,Store C,C031,Samsung S24 Ultra,Black,256GB,putback
+335,2024-01-09,Store C,C031,Bose Speaker,White,Wireless,grab
+335,2024-01-09,Store C,C031,Bose Speaker,White,Wireless,putback
+336,2024-01-09,Store C,C021,Apple iPhone 15,Silver,128GB,grab
+336,2024-01-09,Store C,C021,Apple iPhone 15,Silver,128GB,purchase
+337,2024-01-09,Store C,C026,Bose Speaker,Blue,Wireless,grab
+337,2024-01-09,Store C,C026,Bose Speaker,Blue,Wireless,purchase
+338,2024-01-09,Store C,C033,Samsung S24 Ultra,Gray,256GB,grab
+338,2024-01-09,Store C,C033,Samsung S24 Ultra,Gray,256GB,purchase
+339,2024-01-09,Store C,C004,Apple iPhone 15,Black,256GB,grab
+339,2024-01-09,Store C,C004,Apple iPhone 15,Black,256GB,purchase
+340,2024-01-09,Store C,C006,Apple iPhone 15,Black,256GB,grab
+340,2024-01-09,Store C,C006,Apple iPhone 15,Black,256GB,purchase
+341,2024-01-09,Store C,C025,Bose Speaker,Blue,Wireless,grab
+341,2024-01-09,Store C,C025,Bose Speaker,Blue,Wireless,purchase
+342,2024-01-09,Store C,C031,Sony Headphones,Black,Noise Cancelling,grab
+342,2024-01-09,Store C,C031,Sony Headphones,Black,Noise Cancelling,putback
+343,2024-01-09,Store C,C038,Bose Speaker,Blue,Wireless,grab
+343,2024-01-09,Store C,C038,Bose Speaker,Blue,Wireless,purchase
+344,2024-01-09,Store C,C015,Samsung S24 Ultra,Gray,512GB,grab
+344,2024-01-09,Store C,C015,Samsung S24 Ultra,Gray,512GB,putback
+344,2024-01-09,Store C,C015,Apple iPhone 15,Silver,128GB,grab
+344,2024-01-09,Store C,C015,Apple iPhone 15,Silver,128GB,purchase
+345,2024-01-09,Store C,C004,Bose Speaker,White,Wireless,grab
+345,2024-01-09,Store C,C004,Bose Speaker,White,Wireless,purchase
+346,2024-01-09,Store C,C030,Apple iPhone 15,Black,256GB,grab
+346,2024-01-09,Store C,C030,Apple iPhone 15,Black,256GB,purchase
+347,2024-01-09,Store C,C030,Sony Headphones,Black,Noise Cancelling,grab
+347,2024-01-09,Store C,C030,Sony Headphones,Black,Noise Cancelling,purchase
+348,2024-01-10,Store A,C047,Bose Speaker,Blue,Wireless,grab
+348,2024-01-10,Store A,C047,Bose Speaker,Blue,Wireless,purchase
+349,2024-01-10,Store A,C049,Apple iPhone 15,Silver,256GB,grab
+349,2024-01-10,Store A,C049,Apple iPhone 15,Silver,256GB,purchase
+350,2024-01-10,Store A,C033,Bose Speaker,White,Wireless,grab
+350,2024-01-10,Store A,C033,Bose Speaker,White,Wireless,purchase
+350,2024-01-10,Store A,C033,Samsung S24 Ultra,Gray,512GB,grab
+350,2024-01-10,Store A,C033,Samsung S24 Ultra,Gray,512GB,putback
+351,2024-01-10,Store A,C022,Apple iPhone 15,Black,128GB,grab
+351,2024-01-10,Store A,C022,Apple iPhone 15,Black,128GB,purchase
+352,2024-01-10,Store A,C005,Samsung S24 Ultra,Gray,512GB,grab
+352,2024-01-10,Store A,C005,Samsung S24 Ultra,Gray,512GB,putback
+353,2024-01-10,Store A,C029,Bose Speaker,White,Wireless,grab
+353,2024-01-10,Store A,C029,Bose Speaker,White,Wireless,purchase
+354,2024-01-10,Store A,C038,Apple iPhone 15,Black,128GB,grab
+354,2024-01-10,Store A,C038,Apple iPhone 15,Black,128GB,purchase
+355,2024-01-10,Store A,C023,Bose Speaker,White,Wireless,grab
+355,2024-01-10,Store A,C023,Bose Speaker,White,Wireless,purchase
+356,2024-01-10,Store A,C034,Apple iPhone 15,Black,128GB,grab
+356,2024-01-10,Store A,C034,Apple iPhone 15,Black,128GB,putback
+357,2024-01-10,Store A,C026,Apple iPhone 15,Black,128GB,grab
+357,2024-01-10,Store A,C026,Apple iPhone 15,Black,128GB,purchase
+358,2024-01-10,Store A,C026,Bose Speaker,Blue,Wireless,grab
+358,2024-01-10,Store A,C026,Bose Speaker,Blue,Wireless,putback
+358,2024-01-10,Store A,C026,Sony Headphones,Black,Noise Cancelling,grab
+358,2024-01-10,Store A,C026,Sony Headphones,Black,Noise Cancelling,purchase
+359,2024-01-10,Store A,C029,Bose Speaker,White,Wireless,grab
+359,2024-01-10,Store A,C029,Bose Speaker,White,Wireless,putback
+360,2024-01-10,Store A,C027,Sony Headphones,Black,Noise Cancelling,grab
+360,2024-01-10,Store A,C027,Sony Headphones,Black,Noise Cancelling,purchase
+361,2024-01-10,Store A,C055,Apple iPhone 15,Black,128GB,grab
+361,2024-01-10,Store A,C055,Apple iPhone 15,Black,128GB,putback
+361,2024-01-10,Store A,C055,Sony Headphones,Black,Noise Cancelling,grab
+361,2024-01-10,Store A,C055,Sony Headphones,Black,Noise Cancelling,putback
+362,2024-01-10,Store A,C020,Samsung S24 Ultra,Black,512GB,grab
+362,2024-01-10,Store A,C020,Samsung S24 Ultra,Black,512GB,purchase
+363,2024-01-10,Store A,C051,Apple iPhone 15,Black,128GB,grab
+363,2024-01-10,Store A,C051,Apple iPhone 15,Black,128GB,purchase
+364,2024-01-10,Store B,C011,Apple iPhone 15,Black,256GB,grab
+364,2024-01-10,Store B,C011,Apple iPhone 15,Black,256GB,putback
+365,2024-01-10,Store B,C015,Bose Speaker,White,Wireless,grab
+365,2024-01-10,Store B,C015,Bose Speaker,White,Wireless,purchase
+366,2024-01-10,Store B,C023,Apple iPhone 15,Silver,128GB,grab
+366,2024-01-10,Store B,C023,Apple iPhone 15,Silver,128GB,purchase
+367,2024-01-10,Store B,C036,Bose Speaker,Blue,Wireless,grab
+367,2024-01-10,Store B,C036,Bose Speaker,Blue,Wireless,putback
+367,2024-01-10,Store B,C036,Apple iPhone 15,Black,128GB,grab
+367,2024-01-10,Store B,C036,Apple iPhone 15,Black,128GB,purchase
+368,2024-01-10,Store B,C008,Bose Speaker,White,Wireless,grab
+368,2024-01-10,Store B,C008,Bose Speaker,White,Wireless,putback
+368,2024-01-10,Store B,C008,Sony Headphones,Black,Noise Cancelling,grab
+368,2024-01-10,Store B,C008,Sony Headphones,Black,Noise Cancelling,putback
+368,2024-01-10,Store B,C008,Apple iPhone 15,Silver,256GB,grab
+368,2024-01-10,Store B,C008,Apple iPhone 15,Silver,256GB,purchase
+369,2024-01-10,Store B,C037,Samsung S24 Ultra,Gray,512GB,grab
+369,2024-01-10,Store B,C037,Samsung S24 Ultra,Gray,512GB,purchase
+370,2024-01-10,Store B,C000,Apple iPhone 15,Black,256GB,grab
+370,2024-01-10,Store B,C000,Apple iPhone 15,Black,256GB,purchase
+371,2024-01-10,Store B,C014,Samsung S24 Ultra,Gray,256GB,grab
+371,2024-01-10,Store B,C014,Samsung S24 Ultra,Gray,256GB,purchase
+372,2024-01-10,Store B,C057,Apple iPhone 15,Silver,256GB,grab
+372,2024-01-10,Store B,C057,Apple iPhone 15,Silver,256GB,putback
+372,2024-01-10,Store B,C057,Sony Headphones,Black,Noise Cancelling,grab
+372,2024-01-10,Store B,C057,Sony Headphones,Black,Noise Cancelling,putback
+372,2024-01-10,Store B,C057,Samsung S24 Ultra,Black,512GB,grab
+372,2024-01-10,Store B,C057,Samsung S24 Ultra,Black,512GB,putback
+373,2024-01-10,Store B,C014,Sony Headphones,Black,Noise Cancelling,grab
+373,2024-01-10,Store B,C014,Sony Headphones,Black,Noise Cancelling,purchase
+373,2024-01-10,Store B,C014,Bose Speaker,Blue,Wireless,grab
+374,2024-01-10,Store B,C022,Bose Speaker,Blue,Wireless,grab
+374,2024-01-10,Store B,C022,Bose Speaker,Blue,Wireless,purchase
+375,2024-01-10,Store C,C055,Samsung S24 Ultra,Gray,512GB,grab
+375,2024-01-10,Store C,C055,Samsung S24 Ultra,Gray,512GB,purchase
+376,2024-01-10,Store C,C006,Apple iPhone 15,Black,256GB,grab
+376,2024-01-10,Store C,C006,Apple iPhone 15,Black,256GB,purchase
+377,2024-01-10,Store C,C026,Apple iPhone 15,Black,128GB,grab
+377,2024-01-10,Store C,C026,Apple iPhone 15,Black,128GB,putback
+378,2024-01-10,Store C,C026,Apple iPhone 15,Silver,256GB,grab
+378,2024-01-10,Store C,C026,Apple iPhone 15,Silver,256GB,purchase
+379,2024-01-10,Store C,C010,Sony Headphones,Black,Noise Cancelling,grab
+379,2024-01-10,Store C,C010,Sony Headphones,Black,Noise Cancelling,putback
+379,2024-01-10,Store C,C010,Bose Speaker,White,Wireless,grab
+379,2024-01-10,Store C,C010,Bose Speaker,White,Wireless,purchase
+380,2024-01-10,Store C,C028,Apple iPhone 15,Black,128GB,grab
+380,2024-01-10,Store C,C028,Apple iPhone 15,Black,128GB,putback
+380,2024-01-10,Store C,C028,Sony Headphones,Black,Noise Cancelling,grab
+380,2024-01-10,Store C,C028,Sony Headphones,Black,Noise Cancelling,putback
+381,2024-01-10,Store C,C052,Sony Headphones,Black,Noise Cancelling,grab
+381,2024-01-10,Store C,C052,Sony Headphones,Black,Noise Cancelling,purchase
+382,2024-01-10,Store C,C031,Apple iPhone 15,Silver,128GB,grab
+382,2024-01-10,Store C,C031,Apple iPhone 15,Silver,128GB,purchase
+383,2024-01-10,Store C,C021,Samsung S24 Ultra,Gray,512GB,grab
+383,2024-01-10,Store C,C021,Samsung S24 Ultra,Gray,512GB,purchase
+384,2024-01-10,Store C,C031,Bose Speaker,White,Wireless,grab
+384,2024-01-10,Store C,C031,Bose Speaker,White,Wireless,purchase
+385,2024-01-10,Store C,C027,Apple iPhone 15,Black,128GB,grab
+385,2024-01-10,Store C,C027,Apple iPhone 15,Black,128GB,purchase
+385,2024-01-10,Store C,C027,Sony Headphones,Black,Noise Cancelling,grab
+385,2024-01-10,Store C,C027,Sony Headphones,Black,Noise Cancelling,putback
+386,2024-01-10,Store C,C022,Samsung S24 Ultra,Gray,256GB,grab
+386,2024-01-10,Store C,C022,Samsung S24 Ultra,Gray,256GB,putback
+387,2024-01-10,Store C,C021,Sony Headphones,Black,Noise Cancelling,grab
+387,2024-01-10,Store C,C021,Sony Headphones,Black,Noise Cancelling,putback
+388,2024-01-10,Store C,C059,Samsung S24 Ultra,Gray,256GB,grab
+388,2024-01-10,Store C,C059,Samsung S24 Ultra,Gray,256GB,purchase
+389,2024-01-11,Store A,C059,Apple iPhone 15,Black,128GB,grab
+389,2024-01-11,Store A,C059,Apple iPhone 15,Black,128GB,purchase
+389,2024-01-11,Store A,C059,Samsung S24 Ultra,Gray,256GB,grab
+389,2024-01-11,Store A,C059,Samsung S24 Ultra,Gray,256GB,putback
+390,2024-01-11,Store A,C018,Samsung S24 Ultra,Black,512GB,grab
+390,2024-01-11,Store A,C018,Samsung S24 Ultra,Black,512GB,purchase
+391,2024-01-11,Store A,C035,Bose Speaker,White,Wireless,grab
+391,2024-01-11,Store A,C035,Bose Speaker,White,Wireless,purchase
+392,2024-01-11,Store A,C008,Samsung S24 Ultra,Black,512GB,grab
+392,2024-01-11,Store A,C008,Samsung S24 Ultra,Black,512GB,putback
+392,2024-01-11,Store A,C008,Apple iPhone 15,Black,128GB,grab
+392,2024-01-11,Store A,C008,Apple iPhone 15,Black,128GB,putback
+392,2024-01-11,Store A,C008,Bose Speaker,White,Wireless,grab
+392,2024-01-11,Store A,C008,Bose Speaker,White,Wireless,putback
+393,2024-01-11,Store A,C028,Apple iPhone 15,Black,128GB,grab
+393,2024-01-11,Store A,C028,Apple iPhone 15,Black,128GB,putback
+393,2024-01-11,Store A,C028,Samsung S24 Ultra,Gray,512GB,grab
+394,2024-01-11,Store A,C042,Bose Speaker,Blue,Wireless,grab
+394,2024-01-11,Store A,C042,Bose Speaker,Blue,Wireless,putback
+394,2024-01-11,Store A,C042,Apple iPhone 15,Black,256GB,grab
+394,2024-01-11,Store A,C042,Apple iPhone 15,Black,256GB,putback
+394,2024-01-11,Store A,C042,Sony Headphones,Black,Noise Cancelling,grab
+394,2024-01-11,Store A,C042,Sony Headphones,Black,Noise Cancelling,putback
+395,2024-01-11,Store A,C012,Sony Headphones,Black,Noise Cancelling,grab
+395,2024-01-11,Store A,C012,Sony Headphones,Black,Noise Cancelling,purchase
+395,2024-01-11,Store A,C012,Samsung S24 Ultra,Gray,256GB,grab
+395,2024-01-11,Store A,C012,Samsung S24 Ultra,Gray,256GB,putback
+396,2024-01-11,Store A,C053,Apple iPhone 15,Black,256GB,grab
+396,2024-01-11,Store A,C053,Apple iPhone 15,Black,256GB,purchase
+396,2024-01-11,Store A,C053,Bose Speaker,Blue,Wireless,grab
+396,2024-01-11,Store A,C053,Bose Speaker,Blue,Wireless,putback
+397,2024-01-11,Store A,C045,Sony Headphones,Black,Noise Cancelling,grab
+397,2024-01-11,Store A,C045,Sony Headphones,Black,Noise Cancelling,putback
+397,2024-01-11,Store A,C045,Bose Speaker,Blue,Wireless,grab
+397,2024-01-11,Store A,C045,Bose Speaker,Blue,Wireless,putback
+397,2024-01-11,Store A,C045,Samsung S24 Ultra,Gray,512GB,grab
+397,2024-01-11,Store A,C045,Samsung S24 Ultra,Gray,512GB,putback
+398,2024-01-11,Store A,C003,Bose Speaker,White,Wireless,grab
+398,2024-01-11,Store A,C003,Bose Speaker,White,Wireless,putback
+398,2024-01-11,Store A,C003,Apple iPhone 15,Silver,128GB,grab
+398,2024-01-11,Store A,C003,Apple iPhone 15,Silver,128GB,putback
+399,2024-01-11,Store A,C027,Bose Speaker,White,Wireless,grab
+399,2024-01-11,Store A,C027,Bose Speaker,White,Wireless,purchase
+400,2024-01-11,Store B,C002,Sony Headphones,Black,Noise Cancelling,grab
+400,2024-01-11,Store B,C002,Sony Headphones,Black,Noise Cancelling,putback
+400,2024-01-11,Store B,C002,Samsung S24 Ultra,Black,512GB,grab
+400,2024-01-11,Store B,C002,Samsung S24 Ultra,Black,512GB,putback
+401,2024-01-11,Store B,C006,Samsung S24 Ultra,Gray,256GB,grab
+401,2024-01-11,Store B,C006,Samsung S24 Ultra,Gray,256GB,purchase
+401,2024-01-11,Store B,C006,Apple iPhone 15,Black,128GB,grab
+401,2024-01-11,Store B,C006,Apple iPhone 15,Black,128GB,putback
+402,2024-01-11,Store B,C021,Sony Headphones,Black,Noise Cancelling,grab
+402,2024-01-11,Store B,C021,Sony Headphones,Black,Noise Cancelling,purchase
+403,2024-01-11,Store B,C031,Bose Speaker,Blue,Wireless,grab
+403,2024-01-11,Store B,C031,Bose Speaker,Blue,Wireless,putback
+404,2024-01-11,Store B,C030,Bose Speaker,Blue,Wireless,grab
+404,2024-01-11,Store B,C030,Bose Speaker,Blue,Wireless,purchase
+404,2024-01-11,Store B,C030,Samsung S24 Ultra,Black,512GB,grab
+404,2024-01-11,Store B,C030,Samsung S24 Ultra,Black,512GB,putback
+405,2024-01-11,Store B,C049,Sony Headphones,Black,Noise Cancelling,grab
+405,2024-01-11,Store B,C049,Sony Headphones,Black,Noise Cancelling,putback
+405,2024-01-11,Store B,C049,Samsung S24 Ultra,Black,512GB,grab
+405,2024-01-11,Store B,C049,Samsung S24 Ultra,Black,512GB,purchase
+406,2024-01-11,Store B,C014,Sony Headphones,Black,Noise Cancelling,grab
+406,2024-01-11,Store B,C014,Sony Headphones,Black,Noise Cancelling,purchase
+406,2024-01-11,Store B,C014,Samsung S24 Ultra,Gray,512GB,grab
+407,2024-01-11,Store B,C046,Bose Speaker,White,Wireless,grab
+407,2024-01-11,Store B,C046,Bose Speaker,White,Wireless,putback
+408,2024-01-11,Store B,C020,Bose Speaker,White,Wireless,grab
+408,2024-01-11,Store B,C020,Bose Speaker,White,Wireless,purchase
+409,2024-01-11,Store B,C000,Sony Headphones,Black,Noise Cancelling,grab
+409,2024-01-11,Store B,C000,Sony Headphones,Black,Noise Cancelling,putback
+410,2024-01-11,Store B,C000,Sony Headphones,Black,Noise Cancelling,grab
+410,2024-01-11,Store B,C000,Sony Headphones,Black,Noise Cancelling,putback
+411,2024-01-11,Store B,C024,Bose Speaker,White,Wireless,grab
+411,2024-01-11,Store B,C024,Bose Speaker,White,Wireless,putback
+412,2024-01-11,Store B,C017,Samsung S24 Ultra,Gray,256GB,grab
+412,2024-01-11,Store B,C017,Samsung S24 Ultra,Gray,256GB,purchase
+413,2024-01-11,Store B,C033,Sony Headphones,Black,Noise Cancelling,grab
+413,2024-01-11,Store B,C033,Sony Headphones,Black,Noise Cancelling,putback
+414,2024-01-11,Store B,C035,Sony Headphones,Black,Noise Cancelling,grab
+414,2024-01-11,Store B,C035,Sony Headphones,Black,Noise Cancelling,purchase
+415,2024-01-11,Store B,C009,Samsung S24 Ultra,Gray,512GB,grab
+415,2024-01-11,Store B,C009,Samsung S24 Ultra,Gray,512GB,purchase
+416,2024-01-11,Store C,C010,Apple iPhone 15,Silver,256GB,grab
+416,2024-01-11,Store C,C010,Apple iPhone 15,Silver,256GB,purchase
+416,2024-01-11,Store C,C010,Samsung S24 Ultra,Gray,256GB,grab
+416,2024-01-11,Store C,C010,Samsung S24 Ultra,Gray,256GB,putback
+417,2024-01-11,Store C,C054,Sony Headphones,Black,Noise Cancelling,grab
+417,2024-01-11,Store C,C054,Sony Headphones,Black,Noise Cancelling,purchase
+418,2024-01-11,Store C,C034,Sony Headphones,Black,Noise Cancelling,grab
+418,2024-01-11,Store C,C034,Samsung S24 Ultra,Gray,256GB,grab
+418,2024-01-11,Store C,C034,Samsung S24 Ultra,Gray,256GB,purchase
+419,2024-01-11,Store C,C023,Apple iPhone 15,Black,128GB,grab
+419,2024-01-11,Store C,C023,Apple iPhone 15,Black,128GB,purchase
+419,2024-01-11,Store C,C023,Sony Headphones,Black,Noise Cancelling,grab
+419,2024-01-11,Store C,C023,Sony Headphones,Black,Noise Cancelling,putback
+420,2024-01-11,Store C,C001,Apple iPhone 15,Black,128GB,grab
+420,2024-01-11,Store C,C001,Apple iPhone 15,Black,128GB,putback
+420,2024-01-11,Store C,C001,Samsung S24 Ultra,Gray,512GB,grab
+420,2024-01-11,Store C,C001,Samsung S24 Ultra,Gray,512GB,putback
+421,2024-01-11,Store C,C056,Samsung S24 Ultra,Gray,256GB,grab
+421,2024-01-11,Store C,C056,Sony Headphones,Black,Noise Cancelling,grab
+421,2024-01-11,Store C,C056,Sony Headphones,Black,Noise Cancelling,putback
+422,2024-01-11,Store C,C013,Sony Headphones,Black,Noise Cancelling,grab
+422,2024-01-11,Store C,C013,Sony Headphones,Black,Noise Cancelling,purchase
+423,2024-01-11,Store C,C030,Apple iPhone 15,Silver,128GB,grab
+423,2024-01-11,Store C,C030,Apple iPhone 15,Silver,128GB,purchase
+423,2024-01-11,Store C,C030,Samsung S24 Ultra,Gray,256GB,grab
+423,2024-01-11,Store C,C030,Samsung S24 Ultra,Gray,256GB,putback
+424,2024-01-11,Store C,C052,Samsung S24 Ultra,Black,512GB,grab
+424,2024-01-11,Store C,C052,Samsung S24 Ultra,Black,512GB,putback
+424,2024-01-11,Store C,C052,Sony Headphones,Black,Noise Cancelling,grab
+424,2024-01-11,Store C,C052,Sony Headphones,Black,Noise Cancelling,purchase
+425,2024-01-11,Store C,C022,Bose Speaker,White,Wireless,grab
+425,2024-01-11,Store C,C022,Bose Speaker,White,Wireless,purchase
+426,2024-01-12,Store A,C003,Samsung S24 Ultra,Black,256GB,grab
+426,2024-01-12,Store A,C003,Samsung S24 Ultra,Black,256GB,purchase
+427,2024-01-12,Store A,C013,Bose Speaker,White,Wireless,grab
+427,2024-01-12,Store A,C013,Bose Speaker,White,Wireless,putback
+427,2024-01-12,Store A,C013,Samsung S24 Ultra,Gray,256GB,grab
+427,2024-01-12,Store A,C013,Samsung S24 Ultra,Gray,256GB,putback
+427,2024-01-12,Store A,C013,Sony Headphones,Black,Noise Cancelling,grab
+427,2024-01-12,Store A,C013,Sony Headphones,Black,Noise Cancelling,purchase
+428,2024-01-12,Store A,C027,Samsung S24 Ultra,Black,512GB,grab
+428,2024-01-12,Store A,C027,Samsung S24 Ultra,Black,512GB,putback
+429,2024-01-12,Store A,C036,Sony Headphones,Black,Noise Cancelling,grab
+429,2024-01-12,Store A,C036,Sony Headphones,Black,Noise Cancelling,purchase
+430,2024-01-12,Store A,C037,Bose Speaker,Blue,Wireless,grab
+430,2024-01-12,Store A,C037,Bose Speaker,Blue,Wireless,purchase
+431,2024-01-12,Store A,C024,Sony Headphones,Black,Noise Cancelling,grab
+431,2024-01-12,Store A,C024,Sony Headphones,Black,Noise Cancelling,purchase
+432,2024-01-12,Store A,C004,Apple iPhone 15,Black,128GB,grab
+432,2024-01-12,Store A,C004,Apple iPhone 15,Black,128GB,putback
+432,2024-01-12,Store A,C004,Samsung S24 Ultra,Black,256GB,grab
+432,2024-01-12,Store A,C004,Samsung S24 Ultra,Black,256GB,purchase
+433,2024-01-12,Store A,C028,Sony Headphones,Black,Noise Cancelling,grab
+433,2024-01-12,Store A,C028,Sony Headphones,Black,Noise Cancelling,purchase
+433,2024-01-12,Store A,C028,Bose Speaker,Blue,Wireless,grab
+433,2024-01-12,Store A,C028,Bose Speaker,Blue,Wireless,putback
+434,2024-01-12,Store A,C010,Bose Speaker,Blue,Wireless,grab
+434,2024-01-12,Store A,C010,Bose Speaker,Blue,Wireless,purchase
+435,2024-01-12,Store A,C022,Bose Speaker,Blue,Wireless,grab
+435,2024-01-12,Store A,C022,Bose Speaker,Blue,Wireless,putback
+435,2024-01-12,Store A,C022,Apple iPhone 15,Silver,256GB,grab
+435,2024-01-12,Store A,C022,Apple iPhone 15,Silver,256GB,purchase
+436,2024-01-12,Store A,C012,Apple iPhone 15,Black,256GB,grab
+436,2024-01-12,Store A,C012,Apple iPhone 15,Black,256GB,purchase
+437,2024-01-12,Store A,C006,Samsung S24 Ultra,Black,256GB,grab
+437,2024-01-12,Store A,C006,Samsung S24 Ultra,Black,256GB,purchase
+438,2024-01-12,Store A,C048,Sony Headphones,Black,Noise Cancelling,grab
+438,2024-01-12,Store A,C048,Sony Headphones,Black,Noise Cancelling,purchase
+439,2024-01-12,Store A,C059,Samsung S24 Ultra,Gray,512GB,grab
+439,2024-01-12,Store A,C059,Samsung S24 Ultra,Gray,512GB,purchase
+440,2024-01-12,Store A,C035,Sony Headphones,Black,Noise Cancelling,grab
+440,2024-01-12,Store A,C035,Sony Headphones,Black,Noise Cancelling,purchase
+441,2024-01-12,Store B,C033,Apple iPhone 15,Silver,128GB,grab
+441,2024-01-12,Store B,C033,Apple iPhone 15,Silver,128GB,purchase
+442,2024-01-12,Store B,C021,Samsung S24 Ultra,Gray,256GB,grab
+442,2024-01-12,Store B,C021,Samsung S24 Ultra,Gray,256GB,purchase
+443,2024-01-12,Store B,C044,Sony Headphones,Black,Noise Cancelling,grab
+443,2024-01-12,Store B,C044,Sony Headphones,Black,Noise Cancelling,putback
+443,2024-01-12,Store B,C044,Bose Speaker,White,Wireless,grab
+443,2024-01-12,Store B,C044,Bose Speaker,White,Wireless,purchase
+444,2024-01-12,Store B,C057,Sony Headphones,Black,Noise Cancelling,grab
+444,2024-01-12,Store B,C057,Sony Headphones,Black,Noise Cancelling,purchase
+445,2024-01-12,Store B,C051,Bose Speaker,White,Wireless,grab
+445,2024-01-12,Store B,C051,Bose Speaker,White,Wireless,purchase
+446,2024-01-12,Store B,C016,Samsung S24 Ultra,Black,512GB,grab
+446,2024-01-12,Store B,C016,Samsung S24 Ultra,Black,512GB,purchase
+447,2024-01-12,Store B,C036,Samsung S24 Ultra,Gray,256GB,grab
+447,2024-01-12,Store B,C036,Sony Headphones,Black,Noise Cancelling,grab
+447,2024-01-12,Store B,C036,Sony Headphones,Black,Noise Cancelling,putback
+447,2024-01-12,Store B,C036,Bose Speaker,White,Wireless,grab
+447,2024-01-12,Store B,C036,Bose Speaker,White,Wireless,putback
+448,2024-01-12,Store B,C009,Apple iPhone 15,Black,256GB,grab
+448,2024-01-12,Store B,C009,Apple iPhone 15,Black,256GB,purchase
+449,2024-01-12,Store B,C012,Sony Headphones,Black,Noise Cancelling,grab
+449,2024-01-12,Store B,C012,Sony Headphones,Black,Noise Cancelling,purchase
+450,2024-01-12,Store B,C002,Bose Speaker,Blue,Wireless,grab
+450,2024-01-12,Store B,C002,Bose Speaker,Blue,Wireless,putback
+451,2024-01-12,Store B,C054,Apple iPhone 15,Black,128GB,grab
+451,2024-01-12,Store B,C054,Apple iPhone 15,Black,128GB,putback
+452,2024-01-12,Store C,C007,Bose Speaker,Blue,Wireless,grab
+452,2024-01-12,Store C,C007,Bose Speaker,Blue,Wireless,purchase
+453,2024-01-12,Store C,C048,Samsung S24 Ultra,Gray,256GB,grab
+453,2024-01-12,Store C,C048,Samsung S24 Ultra,Gray,256GB,putback
+453,2024-01-12,Store C,C048,Sony Headphones,Black,Noise Cancelling,grab
+453,2024-01-12,Store C,C048,Sony Headphones,Black,Noise Cancelling,purchase
+454,2024-01-12,Store C,C006,Bose Speaker,White,Wireless,grab
+454,2024-01-12,Store C,C006,Bose Speaker,White,Wireless,purchase
+455,2024-01-12,Store C,C030,Sony Headphones,Black,Noise Cancelling,grab
+455,2024-01-12,Store C,C030,Sony Headphones,Black,Noise Cancelling,putback
+456,2024-01-12,Store C,C027,Bose Speaker,Blue,Wireless,grab
+456,2024-01-12,Store C,C027,Bose Speaker,Blue,Wireless,putback
+456,2024-01-12,Store C,C027,Apple iPhone 15,Silver,256GB,grab
+456,2024-01-12,Store C,C027,Apple iPhone 15,Silver,256GB,purchase
+457,2024-01-12,Store C,C008,Bose Speaker,Blue,Wireless,grab
+457,2024-01-12,Store C,C008,Bose Speaker,Blue,Wireless,purchase
+458,2024-01-12,Store C,C005,Bose Speaker,White,Wireless,grab
+458,2024-01-12,Store C,C005,Bose Speaker,White,Wireless,purchase
+459,2024-01-12,Store C,C011,Samsung S24 Ultra,Black,256GB,grab
+459,2024-01-12,Store C,C011,Samsung S24 Ultra,Black,256GB,purchase
+460,2024-01-12,Store C,C024,Apple iPhone 15,Black,256GB,grab
+460,2024-01-12,Store C,C024,Apple iPhone 15,Black,256GB,purchase
+461,2024-01-12,Store C,C020,Samsung S24 Ultra,Black,256GB,grab
+461,2024-01-12,Store C,C020,Samsung S24 Ultra,Black,256GB,purchase
+462,2024-01-12,Store C,C058,Bose Speaker,Blue,Wireless,grab
+462,2024-01-12,Store C,C058,Bose Speaker,Blue,Wireless,purchase
+462,2024-01-12,Store C,C058,Apple iPhone 15,Silver,128GB,grab
+462,2024-01-12,Store C,C058,Apple iPhone 15,Silver,128GB,putback
+463,2024-01-12,Store C,C043,Apple iPhone 15,Black,128GB,grab
+463,2024-01-12,Store C,C043,Apple iPhone 15,Black,128GB,purchase
+463,2024-01-12,Store C,C043,Samsung S24 Ultra,Gray,512GB,grab
+463,2024-01-12,Store C,C043,Samsung S24 Ultra,Gray,512GB,putback
+463,2024-01-12,Store C,C043,Sony Headphones,Black,Noise Cancelling,grab
+463,2024-01-12,Store C,C043,Sony Headphones,Black,Noise Cancelling,putback
+464,2024-01-12,Store C,C058,Apple iPhone 15,Black,128GB,grab
+464,2024-01-12,Store C,C058,Apple iPhone 15,Black,128GB,putback
+464,2024-01-12,Store C,C058,Samsung S24 Ultra,Black,512GB,grab
+464,2024-01-12,Store C,C058,Samsung S24 Ultra,Black,512GB,purchase
+465,2024-01-12,Store C,C024,Sony Headphones,Black,Noise Cancelling,grab
+465,2024-01-12,Store C,C024,Sony Headphones,Black,Noise Cancelling,purchase
+466,2024-01-12,Store C,C056,Apple iPhone 15,Silver,256GB,grab
+466,2024-01-12,Store C,C056,Apple iPhone 15,Silver,256GB,purchase
+467,2024-01-12,Store C,C007,Bose Speaker,Blue,Wireless,grab
+467,2024-01-12,Store C,C007,Bose Speaker,Blue,Wireless,putback
+468,2024-01-13,Store A,C001,Bose Speaker,Blue,Wireless,grab
+468,2024-01-13,Store A,C001,Bose Speaker,Blue,Wireless,purchase
+469,2024-01-13,Store A,C036,Bose Speaker,White,Wireless,grab
+469,2024-01-13,Store A,C036,Bose Speaker,White,Wireless,putback
+470,2024-01-13,Store A,C029,Bose Speaker,Blue,Wireless,grab
+470,2024-01-13,Store A,C029,Bose Speaker,Blue,Wireless,putback
+470,2024-01-13,Store A,C029,Samsung S24 Ultra,Gray,256GB,grab
+470,2024-01-13,Store A,C029,Samsung S24 Ultra,Gray,256GB,putback
+471,2024-01-13,Store A,C038,Sony Headphones,Black,Noise Cancelling,grab
+471,2024-01-13,Store A,C038,Sony Headphones,Black,Noise Cancelling,purchase
+471,2024-01-13,Store A,C038,Apple iPhone 15,Silver,256GB,grab
+471,2024-01-13,Store A,C038,Apple iPhone 15,Silver,256GB,putback
+472,2024-01-13,Store A,C017,Samsung S24 Ultra,Gray,256GB,grab
+472,2024-01-13,Store A,C017,Samsung S24 Ultra,Gray,256GB,purchase
+473,2024-01-13,Store A,C010,Apple iPhone 15,Silver,256GB,grab
+473,2024-01-13,Store A,C010,Apple iPhone 15,Silver,256GB,putback
+473,2024-01-13,Store A,C010,Samsung S24 Ultra,Gray,512GB,grab
+473,2024-01-13,Store A,C010,Samsung S24 Ultra,Gray,512GB,purchase
+474,2024-01-13,Store A,C005,Bose Speaker,White,Wireless,grab
+474,2024-01-13,Store A,C005,Bose Speaker,White,Wireless,purchase
+475,2024-01-13,Store A,C019,Sony Headphones,Black,Noise Cancelling,grab
+475,2024-01-13,Store A,C019,Sony Headphones,Black,Noise Cancelling,purchase
+476,2024-01-13,Store A,C049,Samsung S24 Ultra,Black,512GB,grab
+476,2024-01-13,Store A,C049,Samsung S24 Ultra,Black,512GB,purchase
+477,2024-01-13,Store A,C014,Samsung S24 Ultra,Black,256GB,grab
+477,2024-01-13,Store A,C014,Samsung S24 Ultra,Black,256GB,purchase
+478,2024-01-13,Store A,C045,Bose Speaker,Blue,Wireless,grab
+478,2024-01-13,Store A,C045,Bose Speaker,Blue,Wireless,putback
+478,2024-01-13,Store A,C045,Sony Headphones,Black,Noise Cancelling,grab
+478,2024-01-13,Store A,C045,Sony Headphones,Black,Noise Cancelling,purchase
+479,2024-01-13,Store A,C024,Bose Speaker,Blue,Wireless,grab
+479,2024-01-13,Store A,C024,Bose Speaker,Blue,Wireless,purchase
+480,2024-01-13,Store A,C045,Sony Headphones,Black,Noise Cancelling,grab
+480,2024-01-13,Store A,C045,Sony Headphones,Black,Noise Cancelling,putback
+480,2024-01-13,Store A,C045,Samsung S24 Ultra,Black,512GB,grab
+480,2024-01-13,Store A,C045,Samsung S24 Ultra,Black,512GB,purchase
+481,2024-01-13,Store A,C011,Apple iPhone 15,Silver,128GB,grab
+481,2024-01-13,Store A,C011,Bose Speaker,Blue,Wireless,grab
+481,2024-01-13,Store A,C011,Bose Speaker,Blue,Wireless,purchase
+482,2024-01-13,Store A,C001,Bose Speaker,Blue,Wireless,grab
+482,2024-01-13,Store A,C001,Bose Speaker,Blue,Wireless,purchase
+483,2024-01-13,Store A,C035,Samsung S24 Ultra,Gray,512GB,grab
+483,2024-01-13,Store A,C035,Samsung S24 Ultra,Gray,512GB,purchase
+484,2024-01-13,Store B,C021,Sony Headphones,Black,Noise Cancelling,grab
+484,2024-01-13,Store B,C021,Sony Headphones,Black,Noise Cancelling,putback
+484,2024-01-13,Store B,C021,Apple iPhone 15,Silver,256GB,grab
+484,2024-01-13,Store B,C021,Apple iPhone 15,Silver,256GB,putback
+484,2024-01-13,Store B,C021,Bose Speaker,White,Wireless,grab
+484,2024-01-13,Store B,C021,Bose Speaker,White,Wireless,putback
+485,2024-01-13,Store B,C049,Sony Headphones,Black,Noise Cancelling,grab
+485,2024-01-13,Store B,C049,Sony Headphones,Black,Noise Cancelling,putback
+486,2024-01-13,Store B,C045,Sony Headphones,Black,Noise Cancelling,grab
+486,2024-01-13,Store B,C045,Sony Headphones,Black,Noise Cancelling,putback
+486,2024-01-13,Store B,C045,Samsung S24 Ultra,Black,256GB,grab
+486,2024-01-13,Store B,C045,Samsung S24 Ultra,Black,256GB,purchase
+487,2024-01-13,Store B,C055,Apple iPhone 15,Black,256GB,grab
+487,2024-01-13,Store B,C055,Apple iPhone 15,Black,256GB,purchase
+488,2024-01-13,Store B,C017,Apple iPhone 15,Silver,256GB,grab
+488,2024-01-13,Store B,C017,Apple iPhone 15,Silver,256GB,purchase
+488,2024-01-13,Store B,C017,Samsung S24 Ultra,Black,256GB,grab
+489,2024-01-13,Store B,C024,Sony Headphones,Black,Noise Cancelling,grab
+489,2024-01-13,Store B,C024,Sony Headphones,Black,Noise Cancelling,purchase
+489,2024-01-13,Store B,C024,Samsung S24 Ultra,Gray,512GB,grab
+489,2024-01-13,Store B,C024,Samsung S24 Ultra,Gray,512GB,putback
+489,2024-01-13,Store B,C024,Apple iPhone 15,Silver,256GB,grab
+489,2024-01-13,Store B,C024,Apple iPhone 15,Silver,256GB,putback
+490,2024-01-13,Store B,C049,Sony Headphones,Black,Noise Cancelling,grab
+490,2024-01-13,Store B,C049,Sony Headphones,Black,Noise Cancelling,purchase
+491,2024-01-13,Store B,C020,Apple iPhone 15,Silver,256GB,grab
+491,2024-01-13,Store B,C020,Apple iPhone 15,Silver,256GB,purchase
+492,2024-01-13,Store B,C027,Sony Headphones,Black,Noise Cancelling,grab
+492,2024-01-13,Store B,C027,Sony Headphones,Black,Noise Cancelling,putback
+492,2024-01-13,Store B,C027,Samsung S24 Ultra,Gray,256GB,grab
+492,2024-01-13,Store B,C027,Samsung S24 Ultra,Gray,256GB,putback
+492,2024-01-13,Store B,C027,Bose Speaker,Blue,Wireless,grab
+493,2024-01-13,Store B,C005,Samsung S24 Ultra,Black,512GB,grab
+493,2024-01-13,Store B,C005,Samsung S24 Ultra,Black,512GB,putback
+493,2024-01-13,Store B,C005,Sony Headphones,Black,Noise Cancelling,grab
+493,2024-01-13,Store B,C005,Sony Headphones,Black,Noise Cancelling,putback
+494,2024-01-13,Store B,C047,Apple iPhone 15,Black,256GB,grab
+494,2024-01-13,Store B,C047,Apple iPhone 15,Black,256GB,purchase
+495,2024-01-13,Store B,C034,Sony Headphones,Black,Noise Cancelling,grab
+495,2024-01-13,Store B,C034,Sony Headphones,Black,Noise Cancelling,putback
+495,2024-01-13,Store B,C034,Samsung S24 Ultra,Black,512GB,grab
+495,2024-01-13,Store B,C034,Samsung S24 Ultra,Black,512GB,putback
+495,2024-01-13,Store B,C034,Bose Speaker,Blue,Wireless,grab
+495,2024-01-13,Store B,C034,Bose Speaker,Blue,Wireless,purchase
+496,2024-01-13,Store B,C046,Bose Speaker,Blue,Wireless,grab
+496,2024-01-13,Store B,C046,Bose Speaker,Blue,Wireless,putback
+497,2024-01-13,Store B,C005,Bose Speaker,Blue,Wireless,grab
+497,2024-01-13,Store B,C005,Bose Speaker,Blue,Wireless,putback
+498,2024-01-13,Store B,C012,Bose Speaker,Blue,Wireless,grab
+498,2024-01-13,Store B,C012,Bose Speaker,Blue,Wireless,purchase
+498,2024-01-13,Store B,C012,Apple iPhone 15,Black,256GB,grab
+498,2024-01-13,Store B,C012,Apple iPhone 15,Black,256GB,putback
+499,2024-01-13,Store B,C003,Sony Headphones,Black,Noise Cancelling,grab
+499,2024-01-13,Store B,C003,Sony Headphones,Black,Noise Cancelling,putback
+499,2024-01-13,Store B,C003,Bose Speaker,Blue,Wireless,grab
+499,2024-01-13,Store B,C003,Bose Speaker,Blue,Wireless,putback
+500,2024-01-13,Store C,C041,Bose Speaker,White,Wireless,grab
+500,2024-01-13,Store C,C041,Bose Speaker,White,Wireless,purchase
+501,2024-01-13,Store C,C025,Sony Headphones,Black,Noise Cancelling,grab
+501,2024-01-13,Store C,C025,Sony Headphones,Black,Noise Cancelling,putback
+501,2024-01-13,Store C,C025,Bose Speaker,Blue,Wireless,grab
+501,2024-01-13,Store C,C025,Bose Speaker,Blue,Wireless,putback
+502,2024-01-13,Store C,C005,Samsung S24 Ultra,Black,256GB,grab
+502,2024-01-13,Store C,C005,Samsung S24 Ultra,Black,256GB,purchase
+503,2024-01-13,Store C,C052,Sony Headphones,Black,Noise Cancelling,grab
+503,2024-01-13,Store C,C052,Sony Headphones,Black,Noise Cancelling,purchase
+503,2024-01-13,Store C,C052,Samsung S24 Ultra,Black,256GB,grab
+503,2024-01-13,Store C,C052,Samsung S24 Ultra,Black,256GB,putback
+504,2024-01-13,Store C,C054,Sony Headphones,Black,Noise Cancelling,grab
+504,2024-01-13,Store C,C054,Sony Headphones,Black,Noise Cancelling,putback
+505,2024-01-13,Store C,C055,Sony Headphones,Black,Noise Cancelling,grab
+505,2024-01-13,Store C,C055,Sony Headphones,Black,Noise Cancelling,purchase
+506,2024-01-13,Store C,C040,Bose Speaker,White,Wireless,grab
+506,2024-01-13,Store C,C040,Bose Speaker,White,Wireless,purchase
+506,2024-01-13,Store C,C040,Samsung S24 Ultra,Gray,256GB,grab
+506,2024-01-13,Store C,C040,Samsung S24 Ultra,Gray,256GB,putback
+507,2024-01-13,Store C,C037,Bose Speaker,Blue,Wireless,grab
+507,2024-01-13,Store C,C037,Bose Speaker,Blue,Wireless,putback
+507,2024-01-13,Store C,C037,Apple iPhone 15,Silver,128GB,grab
+507,2024-01-13,Store C,C037,Apple iPhone 15,Silver,128GB,purchase
+507,2024-01-13,Store C,C037,Sony Headphones,Black,Noise Cancelling,grab
+507,2024-01-13,Store C,C037,Sony Headphones,Black,Noise Cancelling,putback
+508,2024-01-13,Store C,C038,Apple iPhone 15,Silver,256GB,grab
+508,2024-01-13,Store C,C038,Apple iPhone 15,Silver,256GB,putback
+508,2024-01-13,Store C,C038,Sony Headphones,Black,Noise Cancelling,grab
+508,2024-01-13,Store C,C038,Sony Headphones,Black,Noise Cancelling,putback
+509,2024-01-13,Store C,C043,Apple iPhone 15,Silver,128GB,grab
+510,2024-01-14,Store A,C007,Bose Speaker,White,Wireless,grab
+510,2024-01-14,Store A,C007,Bose Speaker,White,Wireless,putback
+511,2024-01-14,Store A,C046,Bose Speaker,White,Wireless,grab
+511,2024-01-14,Store A,C046,Bose Speaker,White,Wireless,purchase
+512,2024-01-14,Store A,C024,Sony Headphones,Black,Noise Cancelling,grab
+512,2024-01-14,Store A,C024,Sony Headphones,Black,Noise Cancelling,putback
+512,2024-01-14,Store A,C024,Apple iPhone 15,Silver,256GB,grab
+512,2024-01-14,Store A,C024,Apple iPhone 15,Silver,256GB,purchase
+513,2024-01-14,Store A,C021,Samsung S24 Ultra,Black,512GB,grab
+513,2024-01-14,Store A,C021,Samsung S24 Ultra,Black,512GB,purchase
+514,2024-01-14,Store A,C020,Apple iPhone 15,Black,256GB,grab
+514,2024-01-14,Store A,C020,Apple iPhone 15,Black,256GB,purchase
+515,2024-01-14,Store A,C010,Sony Headphones,Black,Noise Cancelling,grab
+515,2024-01-14,Store A,C010,Sony Headphones,Black,Noise Cancelling,putback
+515,2024-01-14,Store A,C010,Apple iPhone 15,Black,256GB,grab
+515,2024-01-14,Store A,C010,Apple iPhone 15,Black,256GB,purchase
+515,2024-01-14,Store A,C010,Bose Speaker,Blue,Wireless,grab
+515,2024-01-14,Store A,C010,Bose Speaker,Blue,Wireless,putback
+516,2024-01-14,Store A,C015,Apple iPhone 15,Black,256GB,grab
+516,2024-01-14,Store A,C015,Apple iPhone 15,Black,256GB,putback
+516,2024-01-14,Store A,C015,Bose Speaker,White,Wireless,grab
+516,2024-01-14,Store A,C015,Bose Speaker,White,Wireless,putback
+516,2024-01-14,Store A,C015,Sony Headphones,Black,Noise Cancelling,grab
+516,2024-01-14,Store A,C015,Sony Headphones,Black,Noise Cancelling,purchase
+517,2024-01-14,Store A,C010,Samsung S24 Ultra,Black,512GB,grab
+517,2024-01-14,Store A,C010,Samsung S24 Ultra,Black,512GB,purchase
+518,2024-01-14,Store A,C020,Sony Headphones,Black,Noise Cancelling,grab
+518,2024-01-14,Store A,C020,Sony Headphones,Black,Noise Cancelling,putback
+519,2024-01-14,Store A,C053,Bose Speaker,Blue,Wireless,grab
+519,2024-01-14,Store A,C053,Bose Speaker,Blue,Wireless,purchase
+520,2024-01-14,Store A,C045,Samsung S24 Ultra,Gray,256GB,grab
+520,2024-01-14,Store A,C045,Samsung S24 Ultra,Gray,256GB,purchase
+521,2024-01-14,Store A,C021,Samsung S24 Ultra,Black,256GB,grab
+521,2024-01-14,Store A,C021,Samsung S24 Ultra,Black,256GB,putback
+522,2024-01-14,Store A,C030,Samsung S24 Ultra,Gray,512GB,grab
+522,2024-01-14,Store A,C030,Samsung S24 Ultra,Gray,512GB,purchase
+523,2024-01-14,Store B,C045,Sony Headphones,Black,Noise Cancelling,grab
+523,2024-01-14,Store B,C045,Sony Headphones,Black,Noise Cancelling,purchase
+524,2024-01-14,Store B,C056,Sony Headphones,Black,Noise Cancelling,grab
+524,2024-01-14,Store B,C056,Sony Headphones,Black,Noise Cancelling,purchase
+525,2024-01-14,Store B,C036,Samsung S24 Ultra,Gray,256GB,grab
+525,2024-01-14,Store B,C036,Samsung S24 Ultra,Gray,256GB,putback
+525,2024-01-14,Store B,C036,Sony Headphones,Black,Noise Cancelling,grab
+525,2024-01-14,Store B,C036,Sony Headphones,Black,Noise Cancelling,purchase
+526,2024-01-14,Store B,C022,Bose Speaker,Blue,Wireless,grab
+526,2024-01-14,Store B,C022,Bose Speaker,Blue,Wireless,purchase
+526,2024-01-14,Store B,C022,Apple iPhone 15,Silver,256GB,grab
+526,2024-01-14,Store B,C022,Apple iPhone 15,Silver,256GB,putback
+527,2024-01-14,Store B,C027,Apple iPhone 15,Silver,256GB,grab
+527,2024-01-14,Store B,C027,Apple iPhone 15,Silver,256GB,putback
+528,2024-01-14,Store B,C059,Bose Speaker,Blue,Wireless,grab
+528,2024-01-14,Store B,C059,Bose Speaker,Blue,Wireless,purchase
+529,2024-01-14,Store B,C056,Sony Headphones,Black,Noise Cancelling,grab
+530,2024-01-14,Store B,C017,Samsung S24 Ultra,Gray,256GB,grab
+530,2024-01-14,Store B,C017,Samsung S24 Ultra,Gray,256GB,putback
+530,2024-01-14,Store B,C017,Apple iPhone 15,Black,256GB,grab
+530,2024-01-14,Store B,C017,Apple iPhone 15,Black,256GB,purchase
+531,2024-01-14,Store B,C051,Samsung S24 Ultra,Gray,512GB,grab
+531,2024-01-14,Store B,C051,Samsung S24 Ultra,Gray,512GB,purchase
+531,2024-01-14,Store B,C051,Bose Speaker,White,Wireless,grab
+531,2024-01-14,Store B,C051,Bose Speaker,White,Wireless,putback
+532,2024-01-14,Store B,C001,Bose Speaker,Blue,Wireless,grab
+532,2024-01-14,Store B,C001,Bose Speaker,Blue,Wireless,purchase
+533,2024-01-14,Store B,C039,Apple iPhone 15,Silver,256GB,grab
+533,2024-01-14,Store B,C039,Apple iPhone 15,Silver,256GB,purchase
+534,2024-01-14,Store B,C057,Sony Headphones,Black,Noise Cancelling,grab
+534,2024-01-14,Store B,C057,Sony Headphones,Black,Noise Cancelling,putback
+535,2024-01-14,Store B,C045,Samsung S24 Ultra,Gray,256GB,grab
+535,2024-01-14,Store B,C045,Samsung S24 Ultra,Gray,256GB,putback
+535,2024-01-14,Store B,C045,Bose Speaker,Blue,Wireless,grab
+535,2024-01-14,Store B,C045,Bose Speaker,Blue,Wireless,putback
+535,2024-01-14,Store B,C045,Sony Headphones,Black,Noise Cancelling,grab
+535,2024-01-14,Store B,C045,Sony Headphones,Black,Noise Cancelling,putback
+536,2024-01-14,Store B,C014,Sony Headphones,Black,Noise Cancelling,grab
+536,2024-01-14,Store B,C014,Sony Headphones,Black,Noise Cancelling,purchase
+536,2024-01-14,Store B,C014,Bose Speaker,White,Wireless,grab
+536,2024-01-14,Store B,C014,Apple iPhone 15,Silver,256GB,grab
+536,2024-01-14,Store B,C014,Apple iPhone 15,Silver,256GB,putback
+537,2024-01-14,Store B,C029,Sony Headphones,Black,Noise Cancelling,grab
+537,2024-01-14,Store B,C029,Sony Headphones,Black,Noise Cancelling,purchase
+538,2024-01-14,Store B,C043,Bose Speaker,Blue,Wireless,grab
+538,2024-01-14,Store B,C043,Bose Speaker,Blue,Wireless,purchase
+539,2024-01-14,Store C,C008,Sony Headphones,Black,Noise Cancelling,grab
+539,2024-01-14,Store C,C008,Apple iPhone 15,Black,256GB,grab
+539,2024-01-14,Store C,C008,Apple iPhone 15,Black,256GB,purchase
+540,2024-01-14,Store C,C006,Sony Headphones,Black,Noise Cancelling,grab
+540,2024-01-14,Store C,C006,Sony Headphones,Black,Noise Cancelling,putback
+540,2024-01-14,Store C,C006,Samsung S24 Ultra,Gray,256GB,grab
+540,2024-01-14,Store C,C006,Samsung S24 Ultra,Gray,256GB,putback
+540,2024-01-14,Store C,C006,Bose Speaker,White,Wireless,grab
+540,2024-01-14,Store C,C006,Bose Speaker,White,Wireless,putback
+541,2024-01-14,Store C,C027,Samsung S24 Ultra,Gray,256GB,grab
+541,2024-01-14,Store C,C027,Samsung S24 Ultra,Gray,256GB,putback
+541,2024-01-14,Store C,C027,Bose Speaker,White,Wireless,grab
+541,2024-01-14,Store C,C027,Bose Speaker,White,Wireless,purchase
+542,2024-01-14,Store C,C049,Bose Speaker,Blue,Wireless,grab
+542,2024-01-14,Store C,C049,Bose Speaker,Blue,Wireless,purchase
+543,2024-01-14,Store C,C057,Bose Speaker,White,Wireless,grab
+543,2024-01-14,Store C,C057,Bose Speaker,White,Wireless,purchase
+543,2024-01-14,Store C,C057,Apple iPhone 15,Silver,256GB,grab
+543,2024-01-14,Store C,C057,Apple iPhone 15,Silver,256GB,putback
+544,2024-01-14,Store C,C025,Sony Headphones,Black,Noise Cancelling,grab
+544,2024-01-14,Store C,C025,Sony Headphones,Black,Noise Cancelling,purchase
+545,2024-01-14,Store C,C044,Samsung S24 Ultra,Gray,512GB,grab
+545,2024-01-14,Store C,C044,Samsung S24 Ultra,Gray,512GB,purchase
+546,2024-01-14,Store C,C054,Sony Headphones,Black,Noise Cancelling,grab
+546,2024-01-14,Store C,C054,Sony Headphones,Black,Noise Cancelling,purchase
+547,2024-01-14,Store C,C056,Samsung S24 Ultra,Gray,512GB,grab
+547,2024-01-14,Store C,C056,Samsung S24 Ultra,Gray,512GB,purchase
+547,2024-01-14,Store C,C056,Sony Headphones,Black,Noise Cancelling,grab
+547,2024-01-14,Store C,C056,Sony Headphones,Black,Noise Cancelling,putback
+548,2024-01-14,Store C,C037,Bose Speaker,Blue,Wireless,grab
+548,2024-01-14,Store C,C037,Bose Speaker,Blue,Wireless,purchase
+549,2024-01-14,Store C,C015,Sony Headphones,Black,Noise Cancelling,grab
+549,2024-01-14,Store C,C015,Sony Headphones,Black,Noise Cancelling,purchase
+550,2024-01-14,Store C,C047,Sony Headphones,Black,Noise Cancelling,grab
+550,2024-01-14,Store C,C047,Sony Headphones,Black,Noise Cancelling,purchase
+550,2024-01-14,Store C,C047,Samsung S24 Ultra,Gray,512GB,grab
+550,2024-01-14,Store C,C047,Samsung S24 Ultra,Gray,512GB,putback
+551,2024-01-14,Store C,C045,Samsung S24 Ultra,Gray,512GB,grab
+551,2024-01-14,Store C,C045,Samsung S24 Ultra,Gray,512GB,putback
+552,2024-01-14,Store C,C026,Apple iPhone 15,Silver,128GB,grab
+552,2024-01-14,Store C,C026,Apple iPhone 15,Silver,128GB,putback
+553,2024-01-14,Store C,C002,Sony Headphones,Black,Noise Cancelling,grab
+553,2024-01-14,Store C,C002,Sony Headphones,Black,Noise Cancelling,purchase
+554,2024-01-14,Store C,C015,Apple iPhone 15,Black,256GB,grab
+554,2024-01-14,Store C,C015,Apple iPhone 15,Black,256GB,putback
+555,2024-01-14,Store C,C047,Sony Headphones,Black,Noise Cancelling,grab
+555,2024-01-14,Store C,C047,Sony Headphones,Black,Noise Cancelling,putback
+555,2024-01-14,Store C,C047,Bose Speaker,Blue,Wireless,grab
+555,2024-01-14,Store C,C047,Bose Speaker,Blue,Wireless,purchase
+556,2024-01-15,Store A,C043,Apple iPhone 15,Silver,256GB,grab
+556,2024-01-15,Store A,C043,Apple iPhone 15,Silver,256GB,purchase
+556,2024-01-15,Store A,C043,Samsung S24 Ultra,Gray,512GB,grab
+556,2024-01-15,Store A,C043,Samsung S24 Ultra,Gray,512GB,putback
+557,2024-01-15,Store A,C059,Sony Headphones,Black,Noise Cancelling,grab
+557,2024-01-15,Store A,C059,Sony Headphones,Black,Noise Cancelling,purchase
+558,2024-01-15,Store A,C016,Sony Headphones,Black,Noise Cancelling,grab
+558,2024-01-15,Store A,C016,Sony Headphones,Black,Noise Cancelling,putback
+558,2024-01-15,Store A,C016,Apple iPhone 15,Black,128GB,grab
+558,2024-01-15,Store A,C016,Apple iPhone 15,Black,128GB,putback
+558,2024-01-15,Store A,C016,Samsung S24 Ultra,Black,512GB,grab
+558,2024-01-15,Store A,C016,Samsung S24 Ultra,Black,512GB,putback
+559,2024-01-15,Store A,C058,Bose Speaker,Blue,Wireless,grab
+559,2024-01-15,Store A,C058,Bose Speaker,Blue,Wireless,purchase
+560,2024-01-15,Store A,C003,Sony Headphones,Black,Noise Cancelling,grab
+560,2024-01-15,Store A,C003,Sony Headphones,Black,Noise Cancelling,putback
+560,2024-01-15,Store A,C003,Apple iPhone 15,Black,128GB,grab
+560,2024-01-15,Store A,C003,Apple iPhone 15,Black,128GB,purchase
+561,2024-01-15,Store A,C025,Samsung S24 Ultra,Gray,512GB,grab
+561,2024-01-15,Store A,C025,Samsung S24 Ultra,Gray,512GB,putback
+561,2024-01-15,Store A,C025,Apple iPhone 15,Silver,256GB,grab
+561,2024-01-15,Store A,C025,Apple iPhone 15,Silver,256GB,purchase
+561,2024-01-15,Store A,C025,Bose Speaker,Blue,Wireless,grab
+561,2024-01-15,Store A,C025,Bose Speaker,Blue,Wireless,putback
+562,2024-01-15,Store A,C013,Apple iPhone 15,Black,256GB,grab
+562,2024-01-15,Store A,C013,Samsung S24 Ultra,Gray,256GB,grab
+562,2024-01-15,Store A,C013,Samsung S24 Ultra,Gray,256GB,putback
+563,2024-01-15,Store A,C026,Bose Speaker,Blue,Wireless,grab
+563,2024-01-15,Store A,C026,Bose Speaker,Blue,Wireless,purchase
+564,2024-01-15,Store A,C045,Sony Headphones,Black,Noise Cancelling,grab
+564,2024-01-15,Store A,C045,Sony Headphones,Black,Noise Cancelling,purchase
+564,2024-01-15,Store A,C045,Bose Speaker,White,Wireless,grab
+564,2024-01-15,Store A,C045,Bose Speaker,White,Wireless,putback
+565,2024-01-15,Store A,C018,Apple iPhone 15,Black,128GB,grab
+565,2024-01-15,Store A,C018,Apple iPhone 15,Black,128GB,putback
+565,2024-01-15,Store A,C018,Bose Speaker,White,Wireless,grab
+565,2024-01-15,Store A,C018,Bose Speaker,White,Wireless,purchase
+565,2024-01-15,Store A,C018,Sony Headphones,Black,Noise Cancelling,grab
+565,2024-01-15,Store A,C018,Sony Headphones,Black,Noise Cancelling,putback
+566,2024-01-15,Store A,C038,Sony Headphones,Black,Noise Cancelling,grab
+566,2024-01-15,Store A,C038,Sony Headphones,Black,Noise Cancelling,purchase
+567,2024-01-15,Store A,C011,Sony Headphones,Black,Noise Cancelling,grab
+567,2024-01-15,Store A,C011,Sony Headphones,Black,Noise Cancelling,purchase
+567,2024-01-15,Store A,C011,Bose Speaker,White,Wireless,grab
+567,2024-01-15,Store A,C011,Bose Speaker,White,Wireless,putback
+568,2024-01-15,Store A,C024,Apple iPhone 15,Black,128GB,grab
+568,2024-01-15,Store A,C024,Apple iPhone 15,Black,128GB,purchase
+569,2024-01-15,Store B,C022,Samsung S24 Ultra,Gray,512GB,grab
+569,2024-01-15,Store B,C022,Samsung S24 Ultra,Gray,512GB,putback
+569,2024-01-15,Store B,C022,Sony Headphones,Black,Noise Cancelling,grab
+569,2024-01-15,Store B,C022,Sony Headphones,Black,Noise Cancelling,purchase
+569,2024-01-15,Store B,C022,Apple iPhone 15,Silver,128GB,grab
+569,2024-01-15,Store B,C022,Apple iPhone 15,Silver,128GB,putback
+570,2024-01-15,Store B,C027,Sony Headphones,Black,Noise Cancelling,grab
+570,2024-01-15,Store B,C027,Sony Headphones,Black,Noise Cancelling,purchase
+571,2024-01-15,Store B,C007,Bose Speaker,Blue,Wireless,grab
+571,2024-01-15,Store B,C007,Bose Speaker,Blue,Wireless,purchase
+571,2024-01-15,Store B,C007,Apple iPhone 15,Black,128GB,grab
+571,2024-01-15,Store B,C007,Apple iPhone 15,Black,128GB,putback
+572,2024-01-15,Store B,C032,Bose Speaker,White,Wireless,grab
+572,2024-01-15,Store B,C032,Bose Speaker,White,Wireless,purchase
+573,2024-01-15,Store B,C012,Samsung S24 Ultra,Black,256GB,grab
+573,2024-01-15,Store B,C012,Samsung S24 Ultra,Black,256GB,putback
+573,2024-01-15,Store B,C012,Sony Headphones,Black,Noise Cancelling,grab
+573,2024-01-15,Store B,C012,Sony Headphones,Black,Noise Cancelling,putback
+574,2024-01-15,Store B,C014,Apple iPhone 15,Black,256GB,grab
+574,2024-01-15,Store B,C014,Apple iPhone 15,Black,256GB,purchase
+575,2024-01-15,Store B,C019,Apple iPhone 15,Black,128GB,grab
+575,2024-01-15,Store B,C019,Apple iPhone 15,Black,128GB,purchase
+576,2024-01-15,Store B,C045,Samsung S24 Ultra,Black,512GB,grab
+576,2024-01-15,Store B,C045,Samsung S24 Ultra,Black,512GB,putback
+577,2024-01-15,Store B,C022,Samsung S24 Ultra,Black,256GB,grab
+577,2024-01-15,Store B,C022,Samsung S24 Ultra,Black,256GB,putback
+578,2024-01-15,Store B,C000,Bose Speaker,Blue,Wireless,grab
+578,2024-01-15,Store B,C000,Bose Speaker,Blue,Wireless,purchase
+579,2024-01-15,Store C,C029,Sony Headphones,Black,Noise Cancelling,grab
+579,2024-01-15,Store C,C029,Sony Headphones,Black,Noise Cancelling,putback
+579,2024-01-15,Store C,C029,Apple iPhone 15,Black,256GB,grab
+579,2024-01-15,Store C,C029,Apple iPhone 15,Black,256GB,purchase
+580,2024-01-15,Store C,C020,Sony Headphones,Black,Noise Cancelling,grab
+580,2024-01-15,Store C,C020,Sony Headphones,Black,Noise Cancelling,purchase
+581,2024-01-15,Store C,C032,Samsung S24 Ultra,Gray,256GB,grab
+581,2024-01-15,Store C,C032,Samsung S24 Ultra,Gray,256GB,purchase
+582,2024-01-15,Store C,C010,Bose Speaker,White,Wireless,grab
+582,2024-01-15,Store C,C010,Bose Speaker,White,Wireless,putback
+583,2024-01-15,Store C,C027,Bose Speaker,White,Wireless,grab
+583,2024-01-15,Store C,C027,Bose Speaker,White,Wireless,putback
+583,2024-01-15,Store C,C027,Sony Headphones,Black,Noise Cancelling,grab
+583,2024-01-15,Store C,C027,Sony Headphones,Black,Noise Cancelling,purchase
+584,2024-01-15,Store C,C032,Samsung S24 Ultra,Black,256GB,grab
+584,2024-01-15,Store C,C032,Samsung S24 Ultra,Black,256GB,purchase
+585,2024-01-15,Store C,C046,Sony Headphones,Black,Noise Cancelling,grab
+585,2024-01-15,Store C,C046,Sony Headphones,Black,Noise Cancelling,purchase
+586,2024-01-15,Store C,C024,Bose Speaker,Blue,Wireless,grab
+586,2024-01-15,Store C,C024,Bose Speaker,Blue,Wireless,putback
+586,2024-01-15,Store C,C024,Samsung S24 Ultra,Gray,256GB,grab
+586,2024-01-15,Store C,C024,Samsung S24 Ultra,Gray,256GB,purchase
+587,2024-01-15,Store C,C027,Bose Speaker,Blue,Wireless,grab
+587,2024-01-15,Store C,C027,Bose Speaker,Blue,Wireless,purchase
+588,2024-01-15,Store C,C052,Bose Speaker,White,Wireless,grab
+588,2024-01-15,Store C,C052,Bose Speaker,White,Wireless,putback
+588,2024-01-15,Store C,C052,Sony Headphones,Black,Noise Cancelling,grab
+588,2024-01-15,Store C,C052,Apple iPhone 15,Black,128GB,grab
+588,2024-01-15,Store C,C052,Apple iPhone 15,Black,128GB,purchase
+589,2024-01-15,Store C,C058,Bose Speaker,Blue,Wireless,grab
+589,2024-01-15,Store C,C058,Bose Speaker,Blue,Wireless,purchase
+590,2024-01-15,Store C,C002,Samsung S24 Ultra,Gray,512GB,grab
+590,2024-01-15,Store C,C002,Samsung S24 Ultra,Gray,512GB,putback
+590,2024-01-15,Store C,C002,Apple iPhone 15,Black,128GB,grab
+590,2024-01-15,Store C,C002,Apple iPhone 15,Black,128GB,putback
+591,2024-01-15,Store C,C020,Samsung S24 Ultra,Gray,512GB,grab
+591,2024-01-15,Store C,C020,Samsung S24 Ultra,Gray,512GB,purchase
+592,2024-01-15,Store C,C013,Apple iPhone 15,Silver,256GB,grab
+592,2024-01-15,Store C,C013,Apple iPhone 15,Silver,256GB,purchase
+592,2024-01-15,Store C,C013,Bose Speaker,Blue,Wireless,grab
+592,2024-01-15,Store C,C013,Bose Speaker,Blue,Wireless,putback
+593,2024-01-15,Store C,C024,Bose Speaker,Blue,Wireless,grab
+593,2024-01-15,Store C,C024,Bose Speaker,Blue,Wireless,purchase
+594,2024-01-15,Store C,C014,Samsung S24 Ultra,Gray,512GB,grab
+594,2024-01-15,Store C,C014,Samsung S24 Ultra,Gray,512GB,putback
+595,2024-01-15,Store C,C033,Sony Headphones,Black,Noise Cancelling,grab
+595,2024-01-15,Store C,C033,Sony Headphones,Black,Noise Cancelling,putback
